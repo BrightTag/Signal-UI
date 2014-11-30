@@ -74,7 +74,27 @@ A style sheet will be generated to provide basic styles generic HTML elements.  
 Development
 -----------
 
+### Installation
+
 ```bash
-gulp watch
 npm install
+```
+
+### Build Resources
+
+Build: `gulp`
+Watch: `gulp watch`
+
+### View Documentation Locally
+
+```bash
+http-server build/docs
+```
+
+Visit http://localhost:8080/
+
+### Deploy Documentation
+
+```bash
+gulp deploy
 ```
