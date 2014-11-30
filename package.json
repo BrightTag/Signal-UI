@@ -5,6 +5,7 @@
   "author": "",
   "license": "Apache License v2",
   "private": true,
+  "main": "helper/index.js",
   "dependencies": {
     "gulp": "^3.8.10",
     "gulp-browserify": "^0.5.0",
