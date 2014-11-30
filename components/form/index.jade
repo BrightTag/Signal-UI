@@ -1,13 +1,13 @@
 form
-  each input in inputs
-    - var id = generateId()
+  each field in config.fields
+    - var id = generateId();
 
     .row
-      label(for=id) #{label}
+      label(for=id) #{field.label}
 
-      if type == 'textarea'
-        textarea(id=id name=name)
-      else if type == 'select'
-        select(id=id name=name)
-      else if ['text', 'email', 'tel'].indexOf(type) !== -1
-        input(id=id type=type name=name)
+      if field.type == 'textarea'
+        textarea(id=id name=field.name)
+      else if field.type == 'select'
+        select(id=id name=field.name)
+      else if ['text', 'email', 'tel'].indexOf(field.type) !== -1
+        input(id=id type=field.type name=field.name)

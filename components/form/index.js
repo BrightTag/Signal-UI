@@ -6,7 +6,9 @@ var form = function($el) {
 };
 
 form.prototype = {
-  // Methods to make available
+  clear: function() {
+    this.$el.find('input, textarea').val('');
+  }
 };
 
 module.exports = form;

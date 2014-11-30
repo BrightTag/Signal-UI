@@ -22,7 +22,7 @@ The following resources will need to be included in the application, in order to
 #### Jade
 
 ```Jade
-!= signalUI('nav/navbar', {
++signalUI('nav/navbar', {
   key: 'value'
 });
 ```
