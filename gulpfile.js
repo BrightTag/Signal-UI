@@ -49,7 +49,7 @@ gulp.task('test', function() {
 gulp.task('default', ['css', 'js', 'docs']);
 
 gulp.task('watch', function() {
-  watch(['components/**/*'], function() {
+  watch(['components/**/*', 'docs/**/*', 'client/**/*', 'helper/**/*'], function() {
     gulp.start('default');
   });
 });
@@ -65,6 +65,6 @@ gulp.task('deploy', function() {
     });
   }
   else {
-    throw 'Please provide a commit message using the -m flag.';
+    throw 'Please provide a commit message using the -m flag';
   }
 });
