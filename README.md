@@ -7,15 +7,20 @@ This repository should:
 - Generate a static website that demonstrates all of the UI components.
 - Provide unit tests that can be run in a continuous integration environment such as Travis CI.
 
-Component Inclusion
--------------------
+Using Components
+----------------
 
-### Resources
+### Integration
 
-The following resources will need to be included in the application, in order to
+The following resources are required in your application:
 
 - `build/SignalUI.css` - Contains all generic styles, component styles and helper classes
 - `build/SignalUI.js` - Contains all JavaScript necessary for component features and to expose a jQuery-based API
+
+Integration Examples are available for:
+
+- [Node](./examples/node)
+
 
 ### Template Syntax
 
