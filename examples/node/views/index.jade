@@ -8,13 +8,5 @@ html
 
     link(rel='stylesheet' type='text/css' href='./SignalUI.css')
 
-    block head
-
   body
-    header
-      h1 Signal UI
-
-    article
-      block content
-
-    footer
+    != signalUI('form', {fields: [{ label: 'First Name', type: 'text' }, {label: 'Last Name', type: 'text'}] })
