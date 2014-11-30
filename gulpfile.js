@@ -4,7 +4,9 @@ var gulp        = require('gulp'),
     watch       = require('gulp-watch'),
     concat      = require('gulp-concat-util'),
     jade        = require('gulp-jade'),
-    browserify  = require('gulp-browserify');
+    browserify  = require('gulp-browserify'),
+    shell       = require('child_process').exec,
+    argv        = require('yargs').argv;
 
 gulp.task('css', function() {
   gulp.src('./components/**/index.scss')
@@ -50,4 +52,19 @@ gulp.task('watch', function() {
   watch(['components/**/*'], function() {
     gulp.start('default');
   });
+});
+
+gulp.task('deploy', function() {
+  var msg = argv.m;
+
+  if(msg) {
+    gulp.start('default');
+    shell('cd build/docs; git add -A; git commit -a -m "'+msg+'"; git push;', function(error, stdout, stderr) {
+      util.log(stdout);
+      util.log(stderr);
+    });
+  }
+  else {
+    throw 'Please provide a commit message using the -m flag.';
+  }
 });
