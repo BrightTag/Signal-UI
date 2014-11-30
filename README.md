@@ -19,7 +19,7 @@ The following resources are required in your application:
 
 Integration Examples are available for:
 
-- [Node](./examples/node)
+- [Node/Express/Jade App](./examples/node)
 
 
 ### Template Syntax
