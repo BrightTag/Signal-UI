@@ -46,7 +46,7 @@ gulp.task('test', function() {
 
 });
 
-gulp.task('default', ['css', 'js', 'mixins', 'docs']);
+gulp.task('default', ['css', 'js', 'docs']);
 
 gulp.task('watch', function() {
   watch(['components/**/*', 'docs/**/*', 'client/**/*', 'helper/**/*'], function() {
