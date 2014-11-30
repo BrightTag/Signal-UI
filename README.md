@@ -22,9 +22,7 @@ The following resources will need to be included in the application, in order to
 #### Jade
 
 ```Jade
-+signalUI('nav/navbar', {
-  key: 'value'
-});
+!= signalUI('nav/navbar', {key: 'value'});
 ```
 
 #### Twig
