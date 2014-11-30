@@ -1,10 +1,10 @@
-var gulp    = require('gulp'),
-    sass    = require('gulp-sass'),
-    util    = require('gulp-util'),
-    watch   = require('gulp-watch'),
-    concat  = require('gulp-concat-util'),
-    jade    = require('gulp-jade'),
-    browserify = require('gulp-browserify');
+var gulp        = require('gulp'),
+    sass        = require('gulp-sass'),
+    util        = require('gulp-util'),
+    watch       = require('gulp-watch'),
+    concat      = require('gulp-concat-util'),
+    jade        = require('gulp-jade'),
+    browserify  = require('gulp-browserify');
 
 gulp.task('css', function() {
   gulp.src('./components/**/index.scss')
@@ -44,7 +44,7 @@ gulp.task('test', function() {
 
 });
 
-gulp.task('default', ['css', 'js', 'mixins', 'docs']);
+gulp.task('default', ['css', 'js', 'docs']);
 
 gulp.task('watch', function() {
   watch(['components/**/*'], function() {

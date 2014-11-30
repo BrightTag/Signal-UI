@@ -16,7 +16,7 @@
     "jade": "^1.7.0"
   },
   "scripts": {
-    "postinstall": "node node_modules/.bin/gulp default;"
+    "postinstall": "git clone https://github.com/BrightTag/Signal-UI.git build/docs -b gh-pages; node node_modules/.bin/gulp default;"
   },
   "engines": {
     "node": "0.10.x"
