@@ -13,21 +13,21 @@ gulp.task('css', function() {
     }))
     .pipe(concat('SignalUI.css'))
     .pipe(gulp.dest('./build'))
-    .pipe(gulp.dest('./build/site'));
+    .pipe(gulp.dest('./build/docs'));
 });
 
 gulp.task('js', function() {
-  gulp.src('./SignalUI.js')
+  gulp.src('./client/SignalUI.js')
     .pipe(browserify({
       insertGlobals: true,
       debug: true
     }))
     .pipe(gulp.dest('./build'))
-    .pipe(gulp.dest('./build/site'));
+    .pipe(gulp.dest('./build/docs'));
 });
 
 gulp.task('docs', function() {
-  gulp.src('./site/**/[^_]*.jade')
+  gulp.src('./docs/**/[^_]*.jade')
     .pipe(jade({
       locals: {
         signalUI: require('./helper')
@@ -37,7 +37,7 @@ gulp.task('docs', function() {
       util.log(err.stack);
     })
     .on('error', util.beep)
-    .pipe(gulp.dest('./build/site'));
+    .pipe(gulp.dest('./build/docs'));
 });
 
 gulp.task('test', function() {

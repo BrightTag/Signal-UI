@@ -1,4 +1,4 @@
-var components = require('./components/index');
+var components = require('../components/index');
 
 var SignalUI = {
   init: function(name, id) {
