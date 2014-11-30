@@ -14,8 +14,8 @@ Component Inclusion
 
 The following resources will need to be included in the application, in order to
 
-- `build/signal-ui.css` - Contains all generic styles, component styles and helper classes
-- `build/signal-ui.js` - Contains all JavaScript necessary for component features and to expose a jQuery-based API
+- `build/SignalUI.css` - Contains all generic styles, component styles and helper classes
+- `build/SignalUI.js` - Contains all JavaScript necessary for component features and to expose a jQuery-based API
 
 ### Template Syntax
 
