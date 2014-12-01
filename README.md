@@ -70,8 +70,8 @@ npm install
 Make sure that you have gulp and http-server installed globally:
 
 ```bash
-npm install -g gulp;
-npm install -g http-server;
+npm install -g gulp
+npm install -g http-server
 ```
 
 ### Build Resources
