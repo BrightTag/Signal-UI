@@ -4,4 +4,41 @@ block head
   title Signal UI
 
 block content
-  != signalUI('form', {fields: [{ label: 'First Name', type: 'text' }, {label: 'Last Name', type: 'text'}] })
+  aside
+    ul
+      each component in components
+        li
+          a(href='javascript:void(0)') #{component.name}
+
+  article
+    h1 Signal UI
+
+    each component in components
+      h2 #{component.name}
+
+      if component.description
+        p #{component.description}
+
+      if component.examples
+        each example in component.examples
+          .card
+            if example.title
+              h4 #{example.title}
+
+            if example.html
+              code #{example.html}
+              .example !{example.html}
+            else
+              .SignalUI-tabs
+                ol.tabs
+                  li Jade
+                  li Twig
+                  li Erb
+                ol.content
+                  li
+                    code.
+                      != SignalUI('#{component.syntax}', #{JSON.stringify(example.config)});
+                  li
+                  li
+
+              != signalUI(component.syntax, example.config)

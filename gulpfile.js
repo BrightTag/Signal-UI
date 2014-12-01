@@ -1,4 +1,6 @@
 var gulp        = require('gulp'),
+    fs          = require('fs'),
+    path        = require('path'),
     sass        = require('gulp-sass'),
     util        = require('gulp-util'),
     watch       = require('gulp-watch'),
@@ -6,7 +8,9 @@ var gulp        = require('gulp'),
     jade        = require('gulp-jade'),
     browserify  = require('gulp-browserify'),
     shell       = require('child_process').exec,
-    argv        = require('yargs').argv;
+    argv        = require('yargs').argv,
+    yaml        = require('js-yaml').load,
+    _           = require('underscore');
 
 gulp.task('css', function() {
   gulp.src('./components/**/index.scss')
@@ -29,10 +33,29 @@ gulp.task('js', function() {
 });
 
 gulp.task('docs', function() {
+  var components = [];
+
+  (function getModules(base) {
+    var doc = require('./components/' + (base ? base + '/' : '') + 'docs');
+
+    if(base) {
+      doc.syntax = base;
+      doc.level  = base.split('/').length;
+      components.push(doc);
+    }
+
+    if(doc.components) {
+      for(var i=0; i<doc.components.length; i++) {
+        getModules((base ? base + '/' : '') + doc.components[i]);
+      }
+    }
+  })();
+
   gulp.src('./docs/**/[^_]*.jade')
     .pipe(jade({
       locals: {
-        signalUI: require('./helper')
+        signalUI:   require('./helper'),
+        components: components
       }
     }))
     .on('error', function(err) {
