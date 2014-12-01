@@ -99,8 +99,7 @@ Components consist of a folders of resources:
 - `docs.md` - The documentation for the component, which will be used to build the style guide website.
 
 
-Generic Styles
---------------
+### Generic Styles
 
 A style sheet will be generated to provide basic styles generic HTML elements.  These styles will be defined using a similar component definition folder:
 
