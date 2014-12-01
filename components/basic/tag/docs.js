@@ -1,9 +1,9 @@
 module.exports = {
-  name:   'Cards',
+  name:   'Tags',
   state:  'Alpha',
   examples: [
     {
-      html: '<div class="card"></div>'
+      html: '<div class="tag">Category</div>'
     }
   ]
 };

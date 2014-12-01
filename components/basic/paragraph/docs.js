@@ -1,5 +1,6 @@
 module.exports = {
-  name: 'Paragraphs',
+  name:   'Paragraphs',
+  state:  'Alpha',
   examples: [
     {
       title: 'Basic Paragraph',

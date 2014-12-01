@@ -1,5 +1,6 @@
 module.exports = {
-  name: 'Headings',
+  name:   'Headings',
+  state:  'Alpha',
   examples: [
     {
       html: '<h1>Heading 1</h1>'
