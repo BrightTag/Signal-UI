@@ -76,15 +76,15 @@ npm install -g http-server;
 
 ### Build Resources
 
-Build: `gulp`
+**Build**: `gulp`
 
-Watch: `gulp watch`
+**Watch**: `gulp watch`
 
 ### Documentation
 
-View Documentation Locally: `http-server build/docs` then visit [http://localhost:8080/](http://localhost:8080/)
+**View Documentation Locally**: `http-server build/docs` then visit [http://localhost:8080/](http://localhost:8080/)
 
-Deploy Documentation: `gulp deploy`
+**Deploy Documentation**: `gulp deploy`
 
 
 Component Definition
