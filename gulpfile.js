@@ -18,6 +18,7 @@ gulp.task('css', function() {
       errLogToConsole: true
     }))
     .pipe(concat('SignalUI.css'))
+    .pipe(concat.header(fs.readFileSync('./node_modules/normalize.css/normalize.css')))
     .pipe(gulp.dest('./build'))
     .pipe(gulp.dest('./build/docs'));
 });
