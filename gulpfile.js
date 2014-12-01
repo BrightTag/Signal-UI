@@ -63,6 +63,12 @@ gulp.task('docs', function() {
     })
     .on('error', util.beep)
     .pipe(gulp.dest('./build/docs'));
+
+  gulp.src('./docs/main.scss')
+    .pipe(sass({
+      errLogToConsole: true
+    }))
+    .pipe(gulp.dest('./build/docs'));
 });
 
 gulp.task('test', function() {
