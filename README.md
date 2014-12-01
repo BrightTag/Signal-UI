@@ -57,24 +57,6 @@ $(componentElement).UI.bind('open', function() {
 });
 ```
 
-Component Definition
---------------------
-
-Components consist of a folders of resources:
-
-- `index.jade`  - The template to generate markup for the component. The argument dictionary is passed into this template.
-- `index.js` (optional) - Any JavaScript needed for the component. Also defines the jQuery API for the component.
-- `index.scss` - The styles for the component.
-- `test.js` (optional) - qUnit tests for the component.
-- `docs.md` - The documentation for the component, which will be used to build the style guide website.
-
-Generic Styles
---------------
-
-A style sheet will be generated to provide basic styles generic HTML elements.  These styles will be defined using a similar component definition folder:
-
-- `index.scss`
-- `docs.md` - The documentation for the component, which will be used to build the style guide website.
 
 Development
 -----------
@@ -110,3 +92,25 @@ Visit http://localhost:8080/
 ```bash
 gulp deploy
 ```
+
+
+Component Definition
+--------------------
+
+Components consist of a folders of resources:
+
+- `index.jade`  - The template to generate markup for the component. The argument dictionary is passed into this template.
+- `index.js` (optional) - Any JavaScript needed for the component. Also defines the jQuery API for the component.
+- `index.scss` - The styles for the component.
+- `test.js` (optional) - qUnit tests for the component.
+- `docs.md` - The documentation for the component, which will be used to build the style guide website.
+
+
+Generic Styles
+--------------
+
+A style sheet will be generated to provide basic styles generic HTML elements.  These styles will be defined using a similar component definition folder:
+
+- `index.scss`
+- `docs.md` - The documentation for the component, which will be used to build the style guide website.
+
