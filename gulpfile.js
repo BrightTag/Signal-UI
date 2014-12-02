@@ -98,3 +98,8 @@ gulp.task('deploy', function() {
     throw 'Please provide a commit message using the -m flag';
   }
 });
+
+gulp.task('serve', function() {
+  shell('http-server build/docs');
+  console.log('Serving Signal UI Documentation at http://localhost:8080/');
+});

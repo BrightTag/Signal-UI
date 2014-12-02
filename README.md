@@ -82,7 +82,7 @@ npm install -g http-server
 
 ### Documentation
 
-**View Documentation Locally**: `http-server build/docs` then visit [http://localhost:8080/](http://localhost:8080/)
+**View Documentation Locally**: `gulp serve` then visit [http://localhost:8080/](http://localhost:8080/)
 
 **Deploy Documentation**: `gulp deploy`
 
