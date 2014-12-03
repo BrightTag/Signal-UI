@@ -1,11 +1,15 @@
 {
   "name": "Signal-UI",
-  "version": "0.0.0",
-  "description": "",
-  "author": "",
+  "version": "0.0.1",
+  "description": "Signal UI components and living style guide",
+  "author": "Signal",
+  "homepage": "http://signal.co",
   "license": "Apache License v2",
-  "private": true,
   "main": "helper/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:BrightTag/Signal-UI.git"
+  },
   "dependencies": {
     "gulp": "^3.8.10",
     "gulp-browserify": "^0.5.0",
@@ -25,5 +29,8 @@
   },
   "engines": {
     "node": "0.10.x"
+  },
+  "publishConfig": {
+    "registry": "http://npm.thebrighttag.com/"
   }
 }

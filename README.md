@@ -87,6 +87,18 @@ npm install -g http-server
 **Deploy Documentation**: `gulp deploy`
 
 
+Deploying & Publishing
+-----------
+
+### Publish NPM Privately
+
+Although `"private": true` isn't listed in the NPM, the registry is listed in `publishConfig` in package.json. This means you can safely publish with the regular npm command without worring about publishing to the public npm registry. Will be listed at [http://npm.thebrighttag.com/](http://npm.thebrighttag.com/)
+
+```bash
+npm publish
+```
+
+
 Component Definition
 --------------------
 
