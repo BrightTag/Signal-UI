@@ -1,3 +1,21 @@
 button {
+	color: #2daae1;
+	border: 2px solid #2daae1;
+	border-radius: 3px;
+	padding: .52941rem 1.17647rem .41176rem;
+	line-height: 1.53846;
+	background-color: transparent;
+	&:hover {
+		background-color: #2daae1;
+		color: #fff;	
+	}
+}
+
+button--small {
 
 }
+
+button--large {
+
+}
+
