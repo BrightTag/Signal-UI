@@ -13,7 +13,7 @@ var gulp        = require('gulp'),
     _           = require('underscore');
 
 var paths = {
-  scss: './src/styles/**/index.scss'
+  scss: './styles/**/index.scss'
 };
 
 gulp.task('css', function() {
@@ -34,7 +34,7 @@ gulp.task('docs', function() {
   var components = [];
 
   (function getModules(base) {
-    var doc = require('./src/styles/' + (base ? base + '/' : '') + 'docs');
+    var doc = require('./styles/' + (base ? base + '/' : '') + 'docs');
 
     if(base) {
       doc.syntax = base;
@@ -49,7 +49,7 @@ gulp.task('docs', function() {
     }
   })();
 
-  gulp.src('./src/site/**/[^_]*.jade')
+  gulp.src('./site/**/[^_]*.jade')
     .pipe(jade({
       locals: {
         components: components
@@ -61,7 +61,7 @@ gulp.task('docs', function() {
     .on('error', util.beep)
     .pipe(gulp.dest('./build/docs'));
 
-  gulp.src('./src/site/main.scss')
+  gulp.src('./site/main.scss')
     .pipe(sass({
       trace: false,
       sourcemapPath: './',
@@ -74,7 +74,7 @@ gulp.task('docs', function() {
 gulp.task('default', ['css', 'docs']);
 
 gulp.task('watch', function() {
-  watch(['src/**/*'], function() {
+  watch(['assets/**/*', 'site/**/*', 'styles/**/*'], function() {
     gulp.start('default');
   });
 });
