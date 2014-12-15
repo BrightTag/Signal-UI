@@ -1,4 +1,11 @@
-html { font: 100% Montserrat; }
+html { font: 100% proxima-nova-alt; }
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: .2em 0;
+  width: 100%;
+}
 
 body {
   position: absolute;
