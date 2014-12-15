@@ -1,7 +1,7 @@
 var gulp        = require('gulp'),
     fs          = require('fs'),
     path        = require('path'),
-    sass        = require('gulp-sass'),
+    rsass       = require('gulp-ruby-sass'),
     util        = require('gulp-util'),
     watch       = require('gulp-watch'),
     concat      = require('gulp-concat-util'),
@@ -12,10 +12,17 @@ var gulp        = require('gulp'),
     yaml        = require('js-yaml').load,
     _           = require('underscore');
 
+var paths = {
+  scss: './components/**/index.scss'
+}
+
 gulp.task('css', function() {
-  gulp.src('./components/**/index.scss')
-    .pipe(sass({
-      errLogToConsole: true
+  return gulp.src( paths.scss )
+    .pipe(rsass({
+      trace: false,
+      sourcemapPath: './',
+      bundleExec: true,
+      require: ['bourbon', 'susy']
     }))
     .pipe(concat('SignalUI.css'))
     .pipe(concat.header(fs.readFileSync('./node_modules/normalize.css/normalize.css')))
@@ -66,8 +73,11 @@ gulp.task('docs', function() {
     .pipe(gulp.dest('./build/docs'));
 
   gulp.src('./docs/main.scss')
-    .pipe(sass({
-      errLogToConsole: true
+    .pipe(rsass({
+      trace: false,
+      sourcemapPath: './',
+      bundleExec: true,
+      require: ['bourbon', 'susy']
     }))
     .pipe(gulp.dest('./build/docs'));
 });

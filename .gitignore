@@ -34,6 +34,11 @@ platforms/PhoneGap/www/css/
 ehthumbs.db
 Thumbs.db
 
-# Node Stuff #
+# Package Managed #
 ##############
 node_modules/
+bower_components/
+
+# Caches #
+##############
+.sass-cache
