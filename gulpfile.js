@@ -1,7 +1,7 @@
 var gulp        = require('gulp'),
     fs          = require('fs'),
     path        = require('path'),
-    sass       = require('gulp-sass'),
+    sass        = require('gulp-sass'),
     util        = require('gulp-util'),
     watch       = require('gulp-watch'),
     concat      = require('gulp-concat-util'),
@@ -95,6 +95,6 @@ gulp.task('deploy', function() {
 });
 
 gulp.task('serve', function() {
-  shell('http-server build/docs');
+  shell('node_modules/.bin/http-server build/docs');
   console.log('Serving Signal UI Documentation at http://localhost:8080/');
 });

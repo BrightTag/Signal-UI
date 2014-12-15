@@ -67,11 +67,10 @@ Development
 npm install
 ```
 
-Make sure that you have gulp and http-server installed globally:
+Make sure that you have gulp installed globally:
 
 ```bash
 npm install -g gulp
-npm install -g http-server
 ```
 
 ### Build Resources

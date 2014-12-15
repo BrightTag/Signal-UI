@@ -19,6 +19,7 @@
     "gulp-sass": "^1.1.0",
     "gulp-util": "^3.0.1",
     "gulp-watch": "^1.1.0",
+    "http-server": "^0.7.4",
     "js-yaml": "^3.2.3",
     "normalize.css": "^3.0.2",
     "underscore": "^1.7.0",
