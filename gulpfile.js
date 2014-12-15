@@ -1,7 +1,7 @@
 var gulp        = require('gulp'),
     fs          = require('fs'),
     path        = require('path'),
-    rsass       = require('gulp-ruby-sass'),
+    sass       = require('gulp-sass'),
     util        = require('gulp-util'),
     watch       = require('gulp-watch'),
     concat      = require('gulp-concat-util'),
@@ -13,12 +13,12 @@ var gulp        = require('gulp'),
     _           = require('underscore');
 
 var paths = {
-  scss: './components/**/index.scss'
-}
+  scss: './src/styles/**/index.scss'
+};
 
 gulp.task('css', function() {
-  return gulp.src( paths.scss )
-    .pipe(rsass({
+  return gulp.src(paths.scss)
+    .pipe(sass({
       trace: false,
       sourcemapPath: './',
       bundleExec: true,
@@ -30,21 +30,11 @@ gulp.task('css', function() {
     .pipe(gulp.dest('./build/docs'));
 });
 
-gulp.task('js', function() {
-  gulp.src('./client/SignalUI.js')
-    .pipe(browserify({
-      insertGlobals: true,
-      debug: true
-    }))
-    .pipe(gulp.dest('./build'))
-    .pipe(gulp.dest('./build/docs'));
-});
-
 gulp.task('docs', function() {
   var components = [];
 
   (function getModules(base) {
-    var doc = require('./components/' + (base ? base + '/' : '') + 'docs');
+    var doc = require('./src/styles/' + (base ? base + '/' : '') + 'docs');
 
     if(base) {
       doc.syntax = base;
@@ -59,10 +49,9 @@ gulp.task('docs', function() {
     }
   })();
 
-  gulp.src('./docs/**/[^_]*.jade')
+  gulp.src('./src/site/**/[^_]*.jade')
     .pipe(jade({
       locals: {
-        signalUI:   require('./helper'),
         components: components
       }
     }))
@@ -72,8 +61,8 @@ gulp.task('docs', function() {
     .on('error', util.beep)
     .pipe(gulp.dest('./build/docs'));
 
-  gulp.src('./docs/main.scss')
-    .pipe(rsass({
+  gulp.src('./src/site/main.scss')
+    .pipe(sass({
       trace: false,
       sourcemapPath: './',
       bundleExec: true,
@@ -82,14 +71,10 @@ gulp.task('docs', function() {
     .pipe(gulp.dest('./build/docs'));
 });
 
-gulp.task('test', function() {
-
-});
-
-gulp.task('default', ['css', 'js', 'docs']);
+gulp.task('default', ['css', 'docs']);
 
 gulp.task('watch', function() {
-  watch(['components/**/*', 'docs/**/*', 'client/**/*', 'helper/**/*'], function() {
+  watch(['src/**/*'], function() {
     gulp.start('default');
   });
 });
