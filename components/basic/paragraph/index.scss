@@ -1,31 +1,24 @@
 p {
-  font-size: 1em;
-  /* equivalent to 16px */
-  line-height: 1.25;
-  /* equivalent to 20px */
+  font-size: 1em; /* equivalent to 16px */
+  line-height: 1.25; /* equivalent to 20px */
+  /*font-family: proxima-nova-alt;*/
 }
 
 @media (min-width: 43.75em) {
   p {
-    font-size: 1em;
-    /* equivalent to 16px */
-    line-height: 1.375;
-    /* equivalent to 22px */
+    font-size: 1em; /* equivalent to 16px */
+    line-height: 1.375; /* equivalent to 22px */
   }
 }
 
 blockquote {
-  font-size: 1.25em;
-  /* 20px / 16px */
-  line-height: 1.25;
-  /* 25px / 20px */
+  font-size: 1.25em; /* 20px / 16px */
+  line-height: 1.25; /* 25px / 20px */
 }
 
 @media (min-width: 43.75em) {
   blockquote {
-    font-size: 1.5em;
-    /* 24px / 16px = */
-    line-height: 1.45833333;
-    /* 35px / 24px */
+    font-size: 1.5em; /* 24px / 16px = */
+    line-height: 1.45833333; /* 35px / 24px */
   }
 }

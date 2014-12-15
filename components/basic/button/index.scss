@@ -9,13 +9,16 @@ button {
 		background-color: #2daae1;
 		color: #fff;	
 	}
+	&:focus {
+  	outline: none;
+  }
 }
 
-button--small {
+.button--small {
 
 }
 
-button--large {
+.button--large {
 
 }
 

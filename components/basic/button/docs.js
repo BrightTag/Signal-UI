@@ -4,6 +4,18 @@ module.exports = {
   examples: [
     {
       html: '<button>Submit</button>'
+    },
+    {
+      html: '<button>Submit</button>'
+    },
+    {
+      html: '<button>Submit</button>'
+    },
+    {
+      html: '<button>hellow</button>'
+    },
+    {
+      html: '<button>Submit</button>'
     }
   ]
 };
