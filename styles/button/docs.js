@@ -3,19 +3,7 @@ module.exports = {
   state:  'Alpha',
   examples: [
     {
-      html: '<button>Submit</button>'
-    },
-    {
-      html: '<button>Submit</button>'
-    },
-    {
-      html: '<button>Submit</button>'
-    },
-    {
-      html: '<button>hellow</button>'
-    },
-    {
-      html: '<button>Submit</button>'
+      html: '<button>Submit</button> <button>Submit</button> <button>Submit</button> <button>Submit</button>'
     }
   ]
 };
