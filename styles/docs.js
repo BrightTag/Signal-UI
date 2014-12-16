@@ -5,6 +5,7 @@ module.exports = {
     'paragraph',
     'card',
     'tag',
-    'button'
+    'button',
+    'documentation'
   ]
 };
