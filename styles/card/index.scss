@@ -1,6 +1,12 @@
 .card {
   box-shadow: 1px 1px 5px #BEBEBE;
-  padding: 1rem;
-  margin-bottom: 1rem;
   border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  code {
+  	background-color: #f1f1f1;
+  	border-top: 1px solid #333;
+		display: inline-block;
+  	margin-top: 1em;
+  }
 }
