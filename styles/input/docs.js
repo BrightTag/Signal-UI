@@ -1,9 +1,19 @@
 module.exports = {
-  name:   'Button',
+  name:   'Inputs',
   state:  'Alpha',
   examples: [
     {
-      html: '<button>Submit</button> <button>Submit</button> <button>Submit</button> <button>Submit</button>'
+      html: '<input placeholder="Standard"></input>'
+    },
+    {
+      html: '<input placeholder="Active"></input>'
+    },
+    {
+      html: '<input placeholder="Alert"></input>'
+    },
+    {
+      html: '<input placeholder="Disabled"></input>'
     }
   ]
 };
+
