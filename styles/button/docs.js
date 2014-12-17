@@ -15,7 +15,7 @@ module.exports = {
       html: '<button class="warning">Submit</button>'
     },
     {
-      html: '<button class="disabled">Disabled</button>'
+      html: '<button disabled>Disabled</button>'
     }
   ]
 };

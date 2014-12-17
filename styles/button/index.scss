@@ -7,8 +7,14 @@ button {
 	padding: .52941rem 4rem .41176rem;
 	text-align: center;
 	text-transform: uppercase;
-}
-
-.primary {
-
+	&:disabled {
+	  background-color: #efefef;
+	  box-shadow: none;
+	  color: #cccccc;
+	}
+	&.primary {
+		background-color: #00a19a;
+		box-shadow: 0 1px 0 0 #004b48;
+		color: #ffffff;
+	}
 }
