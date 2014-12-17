@@ -1,24 +1,10 @@
 button {
-	color: #2daae1;
-	border: 2px solid #2daae1;
-	border-radius: 3px;
-	padding: .52941rem 1.17647rem .41176rem;
+	background-color: #e6e6e6;
+	box-shadow: 0px 1px 0px 0.00px #bababa;
+	color:  #333333;
+	border: none;
 	line-height: 1.53846;
-	background-color: transparent;
-	&:hover {
-		background-color: #2daae1;
-		color: #fff;	
-	}
-	&:focus {
-  	outline: none;
-  }
+	padding: .52941rem 4rem .41176rem;
+	text-align: center;
+	text-transform: uppercase;
 }
-
-.button--small {
-
-}
-
-.button--large {
-
-}
-
