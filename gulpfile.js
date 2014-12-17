@@ -34,7 +34,9 @@ gulp.task('docs', function() {
   var components = [];
 
   (function getModules(base) {
-    var doc = require('./styles/' + (base ? base + '/' : '') + 'docs');
+    var moduleName = './styles/' + (base ? base + '/' : '') + 'docs';
+    delete require.cache[moduleName] // Invalidate cache
+    var doc = require(moduleName);
 
     if(base) {
       doc.syntax = base;
