@@ -1,1 +1,17 @@
-input {}
+input {
+	background-color:  #ffffff;
+	line-height: 1.53846;
+	padding: .52941rem 1rem .41176rem;
+	border: 2px solid #ccc;
+	border-radius: 1px;
+	&:focus {
+		border: 2px solid #00a19a;
+		outline: none;
+	}
+	&.alert {
+		border: 2px solid #ea1c2c;
+	}
+	&:disabled {
+	  background-color: #efefef;
+	}
+}

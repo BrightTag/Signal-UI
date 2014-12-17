@@ -9,10 +9,10 @@ module.exports = {
       html: '<input placeholder="Active"></input>'
     },
     {
-      html: '<input placeholder="Alert"></input>'
+      html: '<input class="alert" placeholder="Alert"></input>'
     },
     {
-      html: '<input placeholder="Disabled"></input>'
+      html: '<input disabled placeholder="Disabled"></input>'
     }
   ]
 };
