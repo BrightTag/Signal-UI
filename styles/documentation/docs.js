@@ -1,5 +1,5 @@
 module.exports = {
-  name:   'Documentations',
+  name:   'Documentation',
   state:  'Alpha',
   examples: [
     {
