@@ -6,6 +6,8 @@ module.exports = {
     'card',
     'tag',
     'button',
+    'input',
+    'list',
     'documentation'
   ]
 };
