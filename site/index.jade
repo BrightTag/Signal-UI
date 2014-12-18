@@ -5,13 +5,22 @@ block head
 
 block content
   aside
+    h3 Styles
     ul
-      h3 Styles
       each component in components
         li
           a(href='javascript:void(0)') #{component.name}
 
-      h3 Components
+    h3 Components
+
+    h3 Examples
+
+    h3 Documentation
+    ul
+      li
+        a(href='/docs/implementation') Implementation
+      li
+        a(href='/docs/API') Component API
 
   article
     h1 Signal UI
