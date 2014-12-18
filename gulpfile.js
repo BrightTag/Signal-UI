@@ -11,7 +11,8 @@ var gulp        = require('gulp'),
     argv        = require('yargs').argv,
     yaml        = require('js-yaml').load,
     _           = require('underscore'),
-    path        = require('path');
+    path        = require('path'),
+    data        = require('gulp-data');
 
 var paths = {
   scss: './styles/**/index.scss'
@@ -53,11 +54,15 @@ gulp.task('docs', function() {
   })();
 
   gulp.src('./site/**/[^_]*.jade')
-    .pipe(jade({
-      locals: {
+    .pipe(data(function(file) {
+      var depth = (file.history[0].replace(file.base, '').match(/\//g) || []).length;
+
+      return {
+        path: depth === 0 ? '.' : Array(depth + 1).join('../'),
         components: components
-      }
+      };
     }))
+    .pipe(jade())
     .on('error', function(err) {
       util.log(err.stack);
     })
