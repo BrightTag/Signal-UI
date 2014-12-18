@@ -10,7 +10,8 @@ var gulp        = require('gulp'),
     shell       = require('child_process').exec,
     argv        = require('yargs').argv,
     yaml        = require('js-yaml').load,
-    _           = require('underscore');
+    _           = require('underscore'),
+    path        = require('path');
 
 var paths = {
   scss: './styles/**/index.scss'
@@ -34,8 +35,8 @@ gulp.task('docs', function() {
   var components = [];
 
   (function getModules(base) {
-    var moduleName = './styles/' + (base ? base + '/' : '') + 'docs';
-    delete require.cache[moduleName] // Invalidate cache
+    var moduleName = './styles/' + (base ? base + '/' : '') + 'docs.js';
+    delete require.cache[path.resolve(moduleName)] // Invalidate cache
     var doc = require(moduleName);
 
     if(base) {
