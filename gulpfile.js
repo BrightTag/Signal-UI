@@ -71,6 +71,9 @@ gulp.task('docs', function() {
       require: ['bourbon', 'susy']
     }))
     .pipe(gulp.dest('./build/docs'));
+
+  gulp.src('./node_modules/signal-ui/dist/library/signal-ui.min.js')
+    .pipe(gulp.dest('./build/docs'));
 });
 
 gulp.task('default', ['css', 'docs']);
