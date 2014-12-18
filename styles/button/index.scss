@@ -1,3 +1,5 @@
+@import "../settings.scss";
+
 button {
 	background-color: #e6e6e6;
 	box-shadow: 0 1px 0 0 #bababa;
@@ -13,7 +15,12 @@ button {
 	  color: #cccccc;
 	}
 	&.primary {
-		background-color: #00a19a;
+		background-color: $teal;
+		box-shadow: 0 1px 0 0 #004b48;
+		color: #ffffff;
+	}
+	&.secondary {
+		background-color: $signal-blue;
 		box-shadow: 0 1px 0 0 #004b48;
 		color: #ffffff;
 	}
