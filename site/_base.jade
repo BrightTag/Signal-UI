@@ -17,4 +17,25 @@ html
     block head
 
   body
-    block content
+    header 
+      h1 Signal UI
+    aside
+      h4 Documentation
+      ul
+        li
+          a(href='/docs/implementation') Implementation
+        li
+          a(href='/docs/API') Component API
+
+      h4 Styles
+      ul
+        each component in components
+          li
+            a(href='javascript:void(0)') #{component.name}
+
+      h4 Components
+
+      h4 Examples
+      
+    article
+      block content

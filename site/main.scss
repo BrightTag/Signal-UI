@@ -1,18 +1,28 @@
+$header-height: 60px;
 $aside-width: 260px;
+$aside-padding: 15px;
+
+header {
+  background: #555555;
+
+  h1 {
+    line-height: $header-height;
+    margin: 0;
+    color: #FFF;
+    padding: 0 $aside-padding;
+  }
+}
 
 aside {
-  $padding: 15px;
-
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: $header-height;
   left: 0;
   width: $aside-width;
   background: #82ACC1;
 
   h4 {
-    margin: $padding 0;
-    padding: 0 $padding;
+    margin: $aside-padding 0;
+    padding: 0 $aside-padding;
     color: #29506E;
   }
   
@@ -21,7 +31,7 @@ aside {
     padding: 0;
 
     li {
-      padding: 0.4em $padding;
+      padding: 0.4em $aside-padding;
     }
     
     li:hover {
@@ -39,7 +49,7 @@ aside {
 article {
   position: absolute;
   right: 0;
-  top: 0;
+  top: $header-height;
   bottom: 0;
   left: $aside-width;
   padding: 1em;

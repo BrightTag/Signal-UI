@@ -4,55 +4,32 @@ block head
   title Signal UI
 
 block content
-  header 
-    h1 Signal UI
+  each component in components
+    h2 #{component.name}
 
-  aside
-    h4 Documentation
-    ul
-      li
-        a(href='/docs/implementation') Implementation
-      li
-        a(href='/docs/API') Component API
+    if component.description
+      p #{component.description}
 
-    h4 Styles
-    ul
-      each component in components
-        li
-          a(href='javascript:void(0)') #{component.name}
+    if component.examples
+      each example in component.examples
+        .card
+          if example.title
+            h3 #{example.title}
 
-    h4 Components
+          if example.html
+            .example !{example.html}
+            code #{example.html}
+          else
+            .SignalUI-tabs
+              ol.tabs
+                li Jade
+                li Twig
+                li Erb
+              ol.content
+                li
+                  code.
+                    != SignalUI('#{component.syntax}', #{JSON.stringify(example.config)});
+                li
+                li
 
-    h4 Examples
-
-
-  article
-    each component in components
-      h2 #{component.name}
-
-      if component.description
-        p #{component.description}
-
-      if component.examples
-        each example in component.examples
-          .card
-            if example.title
-              h3 #{example.title}
-
-            if example.html
-              .example !{example.html}
-              code #{example.html}
-            else
-              .SignalUI-tabs
-                ol.tabs
-                  li Jade
-                  li Twig
-                  li Erb
-                ol.content
-                  li
-                    code.
-                      != SignalUI('#{component.syntax}', #{JSON.stringify(example.config)});
-                  li
-                  li
-
-              != signalUI(component.syntax, example.config)
+            != signalUI(component.syntax, example.config)
