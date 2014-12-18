@@ -1,4 +1,4 @@
-$header-height: 60px;
+$header-height: 70px;
 $aside-width: 260px;
 $aside-padding: 15px;
 
@@ -8,8 +8,12 @@ header {
   h1 {
     line-height: $header-height;
     margin: 0;
-    color: #FFF;
     padding: 0 $aside-padding;
+
+    a {
+      color: #FFF;
+      text-decoration: none;
+    }
   }
 }
 
