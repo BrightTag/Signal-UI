@@ -7,6 +7,9 @@ module.exports = {
     'tag',
     'button',
     'input',
-    'list'
+    'list',
+    'documentation',
+    'textarea',
+    'colorswatches'
   ]
 };

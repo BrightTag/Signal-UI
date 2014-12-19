@@ -16,12 +16,12 @@ button {
 	}
 	&.primary {
 		background-color: $teal;
-		box-shadow: 0 1px 0 0 #004b48;
-		color: #ffffff;
+		box-shadow: 0 1px 0 0 $dark-teal;
+		color: $white;
 	}
 	&.secondary {
 		background-color: $signal-blue;
-		box-shadow: 0 1px 0 0 #004b48;
-		color: #ffffff;
+		box-shadow: 0 1px 0 0 $dark-teal;
+		color: $white;
 	}
 }

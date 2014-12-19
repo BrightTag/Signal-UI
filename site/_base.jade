@@ -1,51 +1,21 @@
-doctype html
-html
-  head
-    meta(charset='utf-8')
+extends ./_base
 
-    // Scripts
-    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
-    script(src=path+'signal-ui.min.js')
-    script(src=path+'main.js')
+block head
+  title Signal UI
 
-    // Typekit
-    script(src='//use.typekit.net/xsv6ecp.js')
-    script try{Typekit.load();}catch(e){}
+block content
+  each component in components
+    h2(id=component.name.replace(/ /g, '-')) #{component.name}
 
-    link(rel='stylesheet' type='text/css' href=path+'SignalUI.css')
-    link(rel='stylesheet' type='text/css' href=path+'main.css')
+    if component.description
+      p #{component.description}
 
-    block head
+    if component.examples
+      each example in component.examples
+        .card
+          if example.title
+            h3 #{example.title}
 
-  body
-    header 
-      h1 
-        a(href=path) Signal UI
-
-    aside
-      //- h4 Components
-
-      h4 Styles
-      ul
-        each component in components
-          a(href=path+'#'+component.name.replace(/ /g, '-'))
-            li #{component.name}
-
-      h4 Documentation
-      ul
-        a(href=path+'docs/implementation') 
-          li Using Components
-        a(href=path+'docs/API') 
-          li Component API
-
-      h4 Examples
-      ul
-        a(href=path+'examples/doc1') 
-          li Document 1
-        a(href=path+'examples/doc2') 
-          li Document 2
-        a(href=path+'examples/doc3') 
-          li Document 3
-      
-    article
-      block content
+          if example.html
+            .example !{example.html}
+            pre #{example.html}

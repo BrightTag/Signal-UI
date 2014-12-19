@@ -3,7 +3,7 @@ module.exports = {
   state:  'Alpha',
   examples: [
     {
-      html: '<input placeholder="Standard"></input>'
+      html: '<input placeholder="Type Here"></input>'
     },
     {
       html: '<input class="alert" placeholder="Alert"></input>'

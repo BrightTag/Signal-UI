@@ -1,0 +1,90 @@
+@import "../settings.scss";
+
+.swatch-container {
+  display: inline-block;
+  width: 105px;
+  margin: 5px;
+  p {
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+
+#signal-blue {
+  background-color: $signal-blue;
+}
+
+#dark-signal-blue {
+  background-color: $dark-signal-blue;
+}
+
+#signal-red {
+  background-color: $signal-red;
+}
+
+#dark-signal-red {
+  background-color: $dark-signal-red;
+}
+
+#teal {
+  background-color: $teal;
+}
+
+#dark-teal {
+  background-color: $dark-teal;
+}
+
+#green {
+  background-color: $green;
+}
+
+#dark-green {
+  background-color: $dark-green;
+}
+
+#blue-lagoon {
+  background-color: $blue-lagoon;
+}
+
+#dark-blue-lagoon {
+  background-color: $dark-blue-lagoon;
+}
+
+#lemon-curd {
+  background-color: $lemon-curd;
+}
+
+#dark-lemon-curd {
+  background-color: $dark-lemon-curd;
+}
+
+#grey {
+  background-color: $grey;
+  p {
+    color: #000;
+  }
+}
+
+#dark-grey {
+  background-color: $dark-grey;
+}
+
+#white {
+  background-color: $white;
+  border-top: 1px solid $light-grey;
+  border-left: 1px solid $light-grey;
+  border-right: 1px solid $light-grey;
+  p {
+    color: #000;
+  }
+}
+
+#light-grey {
+  background-color: $light-grey;
+  p {
+    color: #000;
+  }
+}

@@ -1,3 +1,5 @@
+@import "../settings.scss";
+
 p {
   font-size: 1em; /* equivalent to 16px */
   line-height: 1.25; /* equivalent to 20px */
@@ -14,11 +16,16 @@ p {
 blockquote {
   font-size: 1.25em; /* 20px / 16px */
   line-height: 1.25; /* 25px / 20px */
+  background-color: $teal;
+  color: $white;
+  padding: 30px;
 }
 
 @media (min-width: 43.75em) {
   blockquote {
-    font-size: 1.5em; /* 24px / 16px = */
+    font-size: 1.5em; /* 24px / 16px */
     line-height: 1.45833333; /* 35px / 24px */
+    background-color: $teal;
+    color: $white;
   }
 }
