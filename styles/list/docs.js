@@ -4,15 +4,32 @@ module.exports = {
   examples: [
     {
     	title: 'Unordered Lists',
-      html: '<ul>\r\n<li>Item 1</li>\n\n<li>Item 2</li>\n\n<li>Item 2</li>\n\n</ul>'
+      html: '\
+<ul>\n\
+  <li>Item 1</li>\n\
+  <li>Item 2</li>\n\
+  <li>Item 2</li>\n\
+</ul>'
     },
     {
     	title: 'Ordered Lists',
-      html: '<ol>\r\n<li>Item 1</li>\n\n<li>Item 2</li>\n\n<li>Item 2</li>\n\n</ol>'
+      html: '\
+<ol>\n\
+  <li>Item 1</li>\n\
+  <li>Item 2</li>\n\
+  <li>Item 2</li>\n\
+</ol>'
     },
     {
     	title: 'Definition Lists',
-      html: '<dl>\r\n<di>Item 1</di>\n\n<dd>something interesting</dd>\n\n<di>Item 2</di><dd>something delightful</dd>\n\n</dl>'
+      html: '\
+<dl>\n\
+  <di>Item 1</di>\n\
+  <dd>something interesting</dd>\n\
+  \n\
+  <di>Item 2</di>\n\
+  <dd>something delightful</dd>\n\
+</dl>'
     }
   ]
 };

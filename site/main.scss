@@ -67,4 +67,9 @@ article {
   bottom: 0;
   left: $aside-width;
   padding: $aside-padding $article-padding;
+
+  pre {
+    white-space: pre-wrap;
+    font-size: 0.9em;
+  }
 }

@@ -6,9 +6,6 @@ module.exports = {
       html: '<input placeholder="Standard"></input>'
     },
     {
-      html: '<input placeholder="Active"></input>'
-    },
-    {
       html: '<input class="alert" placeholder="Alert"></input>'
     },
     {
