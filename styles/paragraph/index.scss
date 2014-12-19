@@ -3,7 +3,6 @@
 p {
   font-size: 1em; /* equivalent to 16px */
   line-height: 1.25; /* equivalent to 20px */
-  /*font-family: proxima-nova-alt;*/
 }
 
 @media (min-width: 43.75em) {
@@ -16,17 +15,22 @@ p {
 blockquote {
   font-size: 1.25em; /* 20px / 16px */
   line-height: 1.25; /* 25px / 20px */
-  background-color: $teal;
-  color: $white;
+  background-color: $white;
+  color: $dark-grey;
   padding: 30px;
   max-width: 30em;
+  border-left: 15px solid $signal-blue;
+  border-right: 2px solid $signal-blue;
+  -moz-box-shadow: 1px 1px 2px #ccc;
+  -webkit-box-shadow: 1px 1px 2px #ccc;
+  box-shadow: 1px 1px 5px #ccc;
 }
 
 @media (min-width: 43.75em) {
   blockquote {
     font-size: 1.5em; /* 24px / 16px */
     line-height: 1.45833333; /* 35px / 24px */
-    background-color: $teal;
-    color: $white;
+    background-color: $white;;
+    color: $dark-grey;
   }
 }
