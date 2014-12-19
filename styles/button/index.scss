@@ -11,39 +11,63 @@ button {
 	text-transform: uppercase;
 
 	&.primary {
-		background-color: $signal-blue;
+		background: $signal-blue;
 		box-shadow: 0 1px 0 0 $dark-signal-blue;
 		color: $white;
 
 		&:hover {
-      lighten($signal-blue, 5%);
+      background: lighten($signal-blue, 5%);
 		}
 
 		&:active {
-      darken($signal-blue, 5%);
+      background: darken($signal-blue, 5%);
     }
 	}
 
 	&.secondary {
-		background-color: $light-grey;
+		background: $light-grey;
 		box-shadow: 0 1px 0 0 #bababa;
 		color: $dark-grey;
+
+    &:hover {
+      background: lighten($light-grey, 5%);
+    }
+
+    &:active {
+      background: darken($light-grey, 5%);
+    }
 	}	
 
 	&.caution {
-		background-color: $lemon-curd;
+		background: $lemon-curd;
 		box-shadow: 0 1px 0 0 $dark-lemon-curd;
 		color: $white;
+
+    &:hover {
+      background: lighten($lemon-curd, 5%);
+    }
+
+    &:active {
+      background: darken($lemon-curd, 5%);
+    }
 	}	
 
 	&.warning {
-		background-color: $signal-red;
+		background: $signal-red;
 		box-shadow: 0 1px 0 0 $dark-signal-red;
 		color: $white;
+
+    &:hover {
+      background: lighten($signal-red, 5%);
+    }
+
+    &:active {
+      background: darken($signal-red, 5%);
+    }
 	}
 
 	&:disabled {
-	  background-color: #efefef;
+	  background: #efefef;
 	  box-shadow: none;
 	  color: #cccccc;
 	}
