@@ -13,6 +13,7 @@ html
     script try{Typekit.load();}catch(e){}
 
     link(rel='stylesheet' type='text/css' href=path+'SignalUI.css')
+    link(rel='stylesheet' type='text/css' href=path+'components.min.css')
     link(rel='stylesheet' type='text/css' href=path+'main.css')
 
     block head
@@ -30,6 +31,11 @@ html
         each component in components
           a(href=path+'#'+component.name.replace(/ /g, '-'))
             li #{component.name}
+
+      h4 Components
+      ul
+        a(href=path+'#dropdown')
+          li Dropdown
 
       h4 Documentation
       ul
@@ -51,3 +57,5 @@ html
       block content
 
       footer
+
+    script(src=path+'components.min.js')
