@@ -12,6 +12,9 @@ module.exports = {
       html: '<button class="secondary">Submit</button>'
     },
     {
+      html: '<button class="caution">Submit</button>'
+    },
+    {
       html: '<button class="warning">Submit</button>'
     },
     {

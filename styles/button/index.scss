@@ -1,27 +1,48 @@
 @import "../settings.scss";
 
 button {
-	background-color: #e6e6e6;
+	background-color: $grey;
 	box-shadow: 0 1px 0 0 #bababa;
-	color:  #333333;
+	color:  $dark-grey;
 	border: none;
 	line-height: 1.53846;
 	padding: .52941rem 4rem .41176rem;
 	text-align: center;
 	text-transform: uppercase;
+
+	&.primary {
+		background-color: $signal-blue;
+		box-shadow: 0 1px 0 0 $dark-signal-blue;
+		color: $white;
+	}
+	&.secondary {
+		background-color: $light-grey;
+		box-shadow: 0 1px 0 0 #bababa;
+		color: $dark-grey;
+	}	
+	&.caution {
+		background-color: $lemon-curd;
+		box-shadow: 0 1px 0 0 $dark-lemon-curd;
+		color: $white;
+	}	
+	&.warning {
+		background-color: $signal-red;
+		box-shadow: 0 1px 0 0 $dark-signal-red;
+		color: $white;
+	}
 	&:disabled {
 	  background-color: #efefef;
 	  box-shadow: none;
 	  color: #cccccc;
 	}
-	&.primary {
-		background-color: $teal;
-		box-shadow: 0 1px 0 0 #004b48;
-		color: #ffffff;
-	}
-	&.secondary {
+	&.hover {
+/*		background-color: $signal-blue;
+		box-shadow: 0 1px 0 0 $dark-signal-blue;
+		color: $white;*/
+	}	
+	&.active {
 		background-color: $signal-blue;
-		box-shadow: 0 1px 0 0 #004b48;
-		color: #ffffff;
+		box-shadow: 0 1px 0 0 currentColor;
+		color: $white;
 	}
 }

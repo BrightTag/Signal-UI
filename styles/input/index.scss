@@ -1,15 +1,17 @@
+@import "../settings.scss";
+
 input {
-	background-color:  #ffffff;
+	background-color:  $white;
 	line-height: 1.53846;
 	padding: .52941rem 1rem .41176rem;
 	border: 2px solid #ccc;
 	border-radius: 1px;
 	&:focus {
-		border: 2px solid #00a19a;
+		border: 2px solid $teal;
 		outline: none;
 	}
 	&.alert {
-		border: 2px solid #ea1c2c;
+		border: 2px solid $signal-red;
 	}
 	&:disabled {
 	  background-color: #efefef;
