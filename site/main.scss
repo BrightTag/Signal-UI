@@ -32,7 +32,6 @@ aside {
   box-sizing:         border-box;
 
   h5 {
-    margin: $aside-padding 0;
     padding: 0 $aside-padding;
     color: #29506E;
   }
@@ -41,6 +40,7 @@ aside {
     list-style: none;
     padding: 0;
     line-height: 2.2em;
+    margin: 0;
 
     li {
       padding: 0 $aside-padding;
