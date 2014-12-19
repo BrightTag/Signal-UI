@@ -63,7 +63,7 @@ $(function() {
     onScroll();
   }
   else {
-    var regex = new RegExp('^[^#].*'+path+'?$');
+    var regex = new RegExp(path+'?$');
 
     $('aside a').each(function() {
       var $this = $(this),
