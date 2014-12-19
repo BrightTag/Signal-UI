@@ -25,6 +25,11 @@ aside {
   width: $aside-width;
   background: #82ACC1;
   padding: $aside-padding 0;
+  overflow: scroll;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
 
   h4 {
     margin: $aside-padding 0;

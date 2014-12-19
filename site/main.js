@@ -3,7 +3,8 @@ $(function() {
 
 	// Navigation Positioning
 	var $aside 	= $('aside'),
-			headerH = 70;
+			headerH = 70,
+			lastScroll;
 
 	var onScroll = function() {
 		var scrollTop = $window.scrollTop();
@@ -26,14 +27,7 @@ $(function() {
 	var asideHeight = $aside.height();
 
 	var onResize = function() {
-		var windowH = $window.height();
-
-		if(windowH > asideHeight) {
-			$aside.height(windowH);
-		}
-		else {
-			$aside.css('height', 'auto');
-		}
+		$aside.outerHeight($window.height());
 	};
 
 	$window.resize(onResize);
