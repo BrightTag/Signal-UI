@@ -18,4 +18,6 @@ block content
 
           if example.html
             .example !{example.html}
-            pre #{example.html}
+
+            if !example.hiddenMarkup
+              pre #{example.html}

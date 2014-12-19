@@ -2,7 +2,8 @@ module.exports = {
   name:   'Color Swatches',
   state:  'Alpha',
   examples: [
-    {
+    { 
+      hiddenMarkup: true,
       html: '\
       <div class="swatch-container">\n\
         <div class="signal-blue"><p>#00adef</p></div>\n\
