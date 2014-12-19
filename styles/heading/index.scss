@@ -1,43 +1,42 @@
 @import "../settings.scss";
 
 h1 {
-  font-size: 2.75em; /* 2x body copy size = 32px */
-  line-height: 1.1111em; /* 45px / 36px */
+  font-size: 2.75em;
+  line-height: 1.05;
   font-weight: 300;
 }
 
 h2 {
-  font-size: 2.45em; /* 1.625x body copy size = 26px */
-  line-height: 1.2500em; /* 30px / 26px */
+  font-size: 2.45em;
+  line-height: 1.15;
   font-weight: 300;
 }
       
 h3 {
-  font-size: 2.2em; /* 1.375x body copy size = 22px */
-  line-height: 1.4286em; /* 25px / 22px */
-  font-weight: 400;
+  font-size: 2.2em;
+  line-height: 1.05;
+  font-weight: 300;
 }
 
 h4 {
   font-size: 2em;
-  text-transform: uppercase;
   color:  #555555;
-  font-weight: 400;
-  line-height: 1.5625em;
+  font-weight: 300;
+  line-height: 1;
 }
 
 h5 {
-  font-size: 1.6em;    /* 0.83*16 = 13.28 */
+  font-size: 1.6em;
   color:  #555555;
-  font-weight: 400;
-  line-height: 1.9231em;
+  font-weight: 300;
+  line-height: .9;
 }
 
 h6 {
-  font-size: 1.4em;    /* 0.75*16 = 12 */
+  font-size: 1.4em;
   color:  #555555;
-  font-weight: 400;
-  line-height:1.1364em;
+  font-weight: 300;
+  line-height: .875;
 }
 
 h1, h2, h3, h4, h5, h6 {
