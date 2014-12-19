@@ -1,4 +1,13 @@
 @import "../settings.scss";
 
 ul {}
+
+ol {
+	list-style-position: outside;
+
+  li {
+    list-style-position: outside;
+  }
+}
+
 li {}
