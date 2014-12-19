@@ -23,13 +23,20 @@ html
         a(href=path) Signal UI
 
     aside
-      h4 Components
+      //- h4 Components
 
       h4 Styles
       ul
         each component in components
           a(href='#'+component.name.replace(/ /g, '-'))
             li #{component.name}
+
+      h4 Documentation
+      ul
+        a(href=path+'docs/implementation') 
+          li Using Components
+        a(href=path+'docs/API') 
+          li Component API
 
       h4 Examples
       ul
@@ -39,13 +46,6 @@ html
           li Document 2
         a(href=path+'examples/doc3') 
           li Document 3
-
-      h4 Documentation
-      ul
-        a(href=path+'docs/implementation') 
-          li Implementation
-        a(href=path+'docs/API') 
-          li Component API
       
     article
       block content
