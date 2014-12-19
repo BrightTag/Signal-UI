@@ -24,10 +24,10 @@ module.exports = {
     	title: 'Definition Lists',
       html: '\
 <dl>\n\
-  <di>Item 1</di>\n\
+  <dt>Item 1</dt>\n\
   <dd>something interesting</dd>\n\
   \n\
-  <di>Item 2</di>\n\
+  <dt>Item 2</dt>\n\
   <dd>something delightful</dd>\n\
 </dl>'
     }

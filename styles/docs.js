@@ -8,7 +8,6 @@ module.exports = {
     'button',
     'input',
     'list',
-    'documentation',
     'textarea',
     'colorswatches'
   ]
