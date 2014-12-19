@@ -14,22 +14,34 @@ button {
 		background-color: $signal-blue;
 		box-shadow: 0 1px 0 0 $dark-signal-blue;
 		color: $white;
+
+		&:hover {
+      lighten($signal-blue, 5%);
+		}
+
+		&:active {
+      darken($signal-blue, 5%);
+    }
 	}
+
 	&.secondary {
 		background-color: $light-grey;
 		box-shadow: 0 1px 0 0 #bababa;
 		color: $dark-grey;
 	}	
+
 	&.caution {
 		background-color: $lemon-curd;
 		box-shadow: 0 1px 0 0 $dark-lemon-curd;
 		color: $white;
 	}	
+
 	&.warning {
 		background-color: $signal-red;
 		box-shadow: 0 1px 0 0 $dark-signal-red;
 		color: $white;
 	}
+
 	&:disabled {
 	  background-color: #efefef;
 	  box-shadow: none;
