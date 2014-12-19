@@ -19,17 +19,17 @@ module.exports = {
   <li>Item 2</li>\n\
   <li>Item 2</li>\n\
 </ol>'
-    },
-    {
-    	title: 'Definition Lists',
-      html: '\
-<dl>\n\
-  <dt>Item 1</dt>\n\
-  <dd>something interesting</dd>\n\
-  \n\
-  <dt>Item 2</dt>\n\
-  <dd>something delightful</dd>\n\
-</dl>'
     }
+//     {
+//     	title: 'Definition Lists',
+//       html: '\
+// <dl>\n\
+//   <dt>Item 1</dt>\n\
+//   <dd>something interesting</dd>\n\
+//   \n\
+//   <dt>Item 2</dt>\n\
+//   <dd>something delightful</dd>\n\
+// </dl>'
+//     }
   ]
 };
