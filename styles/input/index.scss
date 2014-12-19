@@ -1,19 +1,23 @@
 @import "../settings.scss";
 
-input {
-	background-color:  $white;
-	line-height: 1.53846;
-	padding: .52941rem 1rem .41176rem;
-	border: 2px solid #ccc;
-	border-radius: 1px;
-	&:focus {
-		border: 2px solid $teal;
-		outline: none;
-	}
-	&.alert {
-		border: 2px solid $signal-red;
-	}
-	&:disabled {
-	  background-color: #efefef;
-	}
+input,
+textarea {
+  background-color:  $white;
+  line-height: 1.53846;
+  padding: .5rem 0.8rem;
+  border: 2px solid #ccc;
+  border-radius: 1px;
+
+  &:focus {
+    border-color: $teal;
+    outline: none;
+  }
+
+  &.alert {
+    border-color: $signal-red;
+  }
+  
+  &:disabled {
+    background-color: #efefef;
+  }
 }
