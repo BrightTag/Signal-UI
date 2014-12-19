@@ -3,7 +3,7 @@ module.exports = {
   state:  'Alpha',
   examples: [
     { 
-      hiddenMarkup: true,
+      noMarkup: true,
       html: '\
 <div class="swatch-container">\n\
   <div class="signal-blue"><p>#00adef</p></div>\n\

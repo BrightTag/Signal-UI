@@ -82,7 +82,18 @@ gulp.task('docs', function() {
     .pipe(browserify())
     .pipe(gulp.dest('./build/docs'));
 
+  // Assets
+  gulp.src('./assets/**/*')
+    .pipe(gulp.dest('./build/docs/assets'));
+
+  // Component Library 
   gulp.src('./node_modules/signal-ui/dist/library/signal-ui.min.js')
+    .pipe(gulp.dest('./build/docs'));
+
+  gulp.src('./node_modules/signal-ui/dist/components/css/components.min.css')
+    .pipe(gulp.dest('./build/docs'));
+
+  gulp.src('./node_modules/signal-ui/dist/components/js/components.min.js')
     .pipe(gulp.dest('./build/docs'));
 });
 

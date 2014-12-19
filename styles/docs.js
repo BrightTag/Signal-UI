@@ -7,6 +7,7 @@ module.exports = {
     'input',
     'textarea',
     'list',
+    'loader',
     'colorswatches'
   ]
 };
