@@ -14,22 +14,22 @@ p {
 }
 
 blockquote {
-  font-size: 1.25em; /* 20px / 16px */
+  font-size: 1.1em; /* 20px / 16px */
   line-height: 1.25; /* 25px / 20px */
   background-color: $white;
   color: $dark-grey;
-  padding: 30px;
+  padding: 1em 1.5em;
   max-width: 30em;
-  border-left: 15px solid $signal-blue;
-  border-right: 2px solid $signal-blue;
-  -moz-box-shadow: 1px 1px 2px #ccc;
-  -webkit-box-shadow: 1px 1px 2px #ccc;
-  box-shadow: 1px 1px 5px #ccc;
+  border-left: 10px solid $signal-blue;
+  // border-right: 2px solid $signal-blue;
+  // -moz-box-shadow: 1px 1px 2px #ccc;
+  // -webkit-box-shadow: 1px 1px 2px #ccc;
+  // box-shadow: 1px 1px 5px #ccc;
 }
 
 @media (min-width: 43.75em) {
   blockquote {
-    font-size: 1.5em; /* 24px / 16px */
+    font-size: 1.2em; /* 24px / 16px */
     line-height: 1.45833333; /* 35px / 24px */
     background-color: $white;;
     color: $dark-grey;
