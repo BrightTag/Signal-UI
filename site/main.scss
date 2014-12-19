@@ -19,7 +19,7 @@ header {
 }
 
 aside {
-  position: absolute;
+  position: fixed;
   top: $header-height;
   left: 0;
   width: $aside-width;

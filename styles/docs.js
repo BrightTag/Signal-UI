@@ -7,7 +7,6 @@ module.exports = {
     'tag',
     'button',
     'input',
-    'list',
-    'example'
+    'list'
   ]
 };

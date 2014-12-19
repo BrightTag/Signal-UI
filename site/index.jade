@@ -5,7 +5,7 @@ block head
 
 block content
   each component in components
-    h2 #{component.name}
+    h2(id=component.name.replace(/ /g, '-')) #{component.name}
 
     if component.description
       p #{component.description}
@@ -19,4 +19,3 @@ block content
           if example.html
             .example !{example.html}
             code #{example.html}
-
