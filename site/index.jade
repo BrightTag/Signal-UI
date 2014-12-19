@@ -5,7 +5,7 @@ block head
 
 block content
   each component in components
-    h2 #{component.name}
+    h1 #{component.name}
 
     if component.description
       p #{component.description}
@@ -14,7 +14,7 @@ block content
       each example in component.examples
         .card
           if example.title
-            h3 #{example.title}
+            h2 #{example.title}
 
           if example.html
             .example !{example.html}

@@ -1,6 +1,7 @@
 $header-height: 70px;
 $aside-width: 260px;
 $aside-padding: 15px;
+$article-padding: 20px;
 
 header {
   background: #555555;
@@ -23,6 +24,7 @@ aside {
   left: 0;
   width: $aside-width;
   background: #82ACC1;
+  padding: $aside-padding 0;
 
   h4 {
     margin: $aside-padding 0;
@@ -56,5 +58,5 @@ article {
   top: $header-height;
   bottom: 0;
   left: $aside-width;
-  padding: 1em;
+  padding: $aside-padding $article-padding;
 }
