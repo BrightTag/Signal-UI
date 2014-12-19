@@ -34,7 +34,7 @@ $(function() {
   onResize();
 
   // Active Link Selection
-  var path        = window.location.pathname,
+  var path        = window.location.pathname.replace(/^\/Signal-UI\//, ''),
       $headings   = $('h2[id]'),
       $asideLinks = $('aside a');
 
@@ -65,9 +65,13 @@ $(function() {
   else {
     var regex = new RegExp(path+'?$');
 
+    console.log(regex);
+
     $('aside a').each(function() {
       var $this = $(this),
           href  = $this.attr('href');
+
+      console.log(href);
 
       if(regex.test(href)) {
         $this.addClass('active');
