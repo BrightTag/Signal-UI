@@ -28,7 +28,7 @@ html
       h4 Styles
       ul
         each component in components
-          a(href='#'+component.name.replace(/ /g, '-'))
+          a(href=path+'#'+component.name.replace(/ /g, '-'))
             li #{component.name}
 
       h4 Documentation

@@ -55,7 +55,7 @@ $(function() {
 
       // Highlight the link
       $asideLinks.removeClass('active');
-      $('aside a[href="#'+hash+'"]').addClass('active');
+      $('aside a[href$="#'+hash+'"]').addClass('active');
     };
 
     $window.scroll(onScroll);
