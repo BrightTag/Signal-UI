@@ -19,6 +19,7 @@ blockquote {
   background-color: $teal;
   color: $white;
   padding: 30px;
+  max-width: 30em;
 }
 
 @media (min-width: 43.75em) {
