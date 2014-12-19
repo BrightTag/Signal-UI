@@ -35,14 +35,4 @@ button {
 	  box-shadow: none;
 	  color: #cccccc;
 	}
-	&.hover {
-/*		background-color: $signal-blue;
-		box-shadow: 0 1px 0 0 $dark-signal-blue;
-		color: $white;*/
-	}	
-	&.active {
-		background-color: $signal-blue;
-		box-shadow: 0 1px 0 0 currentColor;
-		color: $white;
-	}
 }
