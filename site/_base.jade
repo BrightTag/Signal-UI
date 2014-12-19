@@ -5,14 +5,14 @@ html
 
     // Scripts
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
-    script(src=path+'/signal-ui.min.js')
+    script(src=path+'signal-ui.min.js')
 
     // Typekit
     script(src='//use.typekit.net/xsv6ecp.js')
     script try{Typekit.load();}catch(e){}
 
-    link(rel='stylesheet' type='text/css' href=path+'/SignalUI.css')
-    link(rel='stylesheet' type='text/css' href=path+'/main.css')
+    link(rel='stylesheet' type='text/css' href=path+'SignalUI.css')
+    link(rel='stylesheet' type='text/css' href=path+'main.css')
 
     block head
 
@@ -25,9 +25,11 @@ html
       h4 Documentation
       ul
         li
-          a(href=path+'/docs/implementation') Implementation
+          a(href=path+'docs/implementation') Implementation
         li
-          a(href=path+'/docs/API') Component API
+          a(href=path+'docs/API') Component API
+
+      h4 Components
 
       h4 Styles
       ul
@@ -35,9 +37,14 @@ html
           li
             a(href='javascript:void(0)') #{component.name}
 
-      h4 Components
-
       h4 Examples
+      ul
+        li
+          a(href=path+'examples/doc1') Document 1
+        li
+          a(href=path+'examples/doc2') Document 2
+        li
+          a(href=path+'examples/doc3') Document 3
       
     article
       block content

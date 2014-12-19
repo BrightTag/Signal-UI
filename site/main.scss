@@ -35,19 +35,21 @@ aside {
   ul {
     list-style: none;
     padding: 0;
+    line-height: 2em;
 
     li {
-      padding: 0.4em $aside-padding;
+      padding: 0 $aside-padding;
     }
     
-    li:hover {
+    li:hover,
+    .active {
       background: #6086A3;
     }
   }
 
   a {
     color: white;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-decoration: none;
   }
 }

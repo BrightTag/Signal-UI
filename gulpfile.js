@@ -58,7 +58,7 @@ gulp.task('docs', function() {
       var depth = (file.history[0].replace(file.base, '').match(/\//g) || []).length;
 
       return {
-        path: depth === 0 ? '.' : Array(depth + 1).join('../'),
+        path: depth === 0 ? './' : Array(depth + 1).join('../'),
         components: components
       };
     }))

@@ -1,8 +1,8 @@
 module.exports = {
   name: 'Basic Elements',
   components: [
-    'heading',
     'paragraph',
+    'heading',
     'card',
     'tag',
     'button',

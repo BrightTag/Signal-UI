@@ -1,0 +1,45 @@
+<h2>The Basics</h2>
+
+<p>Cache (pronounced &lsquo;cash&rsquo;) is a component of computing that stores data locally on a computer or server to help speed up communication. For example, if a website is showing the same image on every page there is no need for the browser to reach out to the server to retrieve the image to show a user each time a new page is loaded, rather it can reach into its local cache and pull the image from there instead, making for a faster experience. This logic applies to many protocols used online.</p>
+
+<p>A cache-buster, as it relates to online advertising and marketing, is a way of preventing browsers and servers from using locally saved data in a request or a response, ensuring that every time a computer or server makes a fresh requests to another computer it is is caught by any tags or cookies on the page. This is typically done through the use of appending a random number to the end of a URL, thereby &ldquo;tricking&rdquo; the computer into thinking it is a new request instead of something that has been saved locally. This is done to ensure that fresh data can be delivered to a computer (typically a cookie). Alternately the more modern servers and browsers can set headers to prevent an image or a request from caching, thus eliminating the need for the appended random numbers. However, it is still suggested that this is used.</p>
+
+<p>Signal handles this cache-busting automatically in the tag templates (where required) preventing the additional steps of manual configuration by a Signal user.</p>
+
+<h2>A Deeper Dive</h2>
+
+<p>When a browser navigates to a web page, the publisher&rsquo;s content server sends the browser an HTML file with instructions on how to format the page and where to retrieve all the images, text, and other elements.&nbsp;Downloading this information costs the browser time and memory. Saving or caching as much of the information as possible for future use in temporary folders on a user&#39;s hard drive is in the best interest of the user and the website provider.</p>
+
+<p>Cache-busting functionality is used for ads delivered on a website.&nbsp;If a user loaded a publisher&rsquo;s homepage, then went to an article page, then back to the homepage, the ad tag would be exactly the same. The browser would just reuse the ad it called the first time if a cache-buster was not implemented. Since publishers generally get paid for every impression, they don&rsquo;t want this to happen. They want the browser to call or consume another impression so they can charge for it.</p>
+
+<p>Advertisers might like the idea of free impressions, but when pressed, most would tell you&nbsp;cache-busting is a good thing for them. Recycled ads skew reports, disrupt ROI calculations, and add an uncertainty factor to campaign data, not to mention create unneeded tension between publishers and advertisers via discrepancies.</p>
+
+<p>Here are some examples of tags that have cache-busters in them:</p>
+
+<p>
+	<code>&lt;img src= &#39;http://p.rfihub.com/ca.gif?rb=123&amp;ca=12345678&amp;ra+%n&#39; height=0 width=0 style=&#39;display:none&#39; alt=&#39;Rocket Fuel&#39;/&gt;</code>
+</p>
+
+<p>
+	<code>&lt;iframesrc=&quot;https://fls.doubleclicknet/activityi;src=123456;cat=conv;qty=;cost=;u7=departureDate;u6=arrivalDate;u5=state;u&nbsp;4=city;u3=propertyID;u2=;ord=+a+?&quot; width=&quot;1&quot; height=&quot;1&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</code>
+</p>
+
+<p>
+	<code>&lt;img src=&quot;https://ad.amgdgt.com/ads/?t=ap&amp;px=12345&amp;rnd=Insert&nbsp;Random Number&quot;&nbsp;width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot;/&gt;</code>
+</p>
+
+<h2>BrightTag.Random.integer(99999999)</h2>
+
+<p>Signal&#39;s own random number generator. Just set the factor value and you will have a random number generator for that factor. For example:</p>
+
+<p>
+	<code>BrightTag.Random.integer(999)</code>
+</p>
+
+<p>...could (remember, it&#39;s random!) return: 123</p>
+
+<p>
+	<code>BrightTag.Random.integer(999999)</code>
+</p>
+
+<p>...could return: 123456</p>
