@@ -5,8 +5,8 @@ module.exports = {
     'heading',
     'button',
     'input',
-    'list',
     'textarea',
+    'list',
     'colorswatches'
   ]
 };
