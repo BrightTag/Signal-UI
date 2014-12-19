@@ -78,6 +78,10 @@ gulp.task('docs', function() {
     }))
     .pipe(gulp.dest('./build/docs'));
 
+  gulp.src('./site/**/[^_]*.js')
+    .pipe(browserify())
+    .pipe(gulp.dest('./build/docs'));
+
   gulp.src('./node_modules/signal-ui/dist/library/signal-ui.min.js')
     .pipe(gulp.dest('./build/docs'));
 });

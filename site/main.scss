@@ -40,17 +40,18 @@ aside {
     li {
       padding: 0 $aside-padding;
     }
-    
-    li:hover,
-    .active {
-      background: #6086A3;
-    }
   }
 
   a {
+    display: block;
     color: white;
     font-size: 1.2em;
     text-decoration: none;
+
+    &:hover,
+    &.active {
+      background: #6086A3;
+    }
   }
 }
 
