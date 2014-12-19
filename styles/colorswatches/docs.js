@@ -1,5 +1,5 @@
 module.exports = {
-  name:   'Color Swatches',
+  name:   'Colors',
   state:  'Alpha',
   examples: [
     { 
