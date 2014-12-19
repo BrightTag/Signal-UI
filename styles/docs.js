@@ -3,8 +3,6 @@ module.exports = {
   components: [
     'paragraph',
     'heading',
-    'card',
-    'tag',
     'button',
     'input',
     'list',
