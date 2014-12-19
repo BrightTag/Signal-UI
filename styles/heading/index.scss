@@ -2,19 +2,16 @@
 
 h1 {
   font-size: 2.75em;
-  line-height: 1.05;
   font-weight: 300;
 }
 
 h2 {
   font-size: 2.45em;
-  line-height: 1.15;
   font-weight: 300;
 }
       
 h3 {
   font-size: 2.2em;
-  line-height: 1.05;
   font-weight: 300;
 }
 
@@ -22,24 +19,23 @@ h4 {
   font-size: 2em;
   color:  #555555;
   font-weight: 300;
-  line-height: 1;
 }
 
 h5 {
   font-size: 1.6em;
   color:  #555555;
   font-weight: 300;
-  line-height: .9;
 }
 
 h6 {
   font-size: 1.4em;
   color:  #555555;
   font-weight: 300;
-  line-height: .875;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin: 0.8em 0 0.4em;
+
   &:first-child {
     margin-top: 0;
   }
