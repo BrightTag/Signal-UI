@@ -3,9 +3,6 @@ module.exports = {
   state:  'Alpha',
   examples: [
     {
-      html: '<button>Standard</button>'
-    },
-    {
       html: '<button class="primary">Submit</button>'
     },
     {
