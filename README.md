@@ -1,6 +1,8 @@
 Signal UI
 =========
 
+See http://brighttag.github.io/Signal-UI/
+
 This repository should:
 
 - Allow UI components and generic styles to easily be included in the all three of the applications.
