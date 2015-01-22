@@ -26,7 +26,7 @@ gulp.task('css', function() {
       bundleExec: true,
       require: ['bourbon', 'susy']
     }))
-    .pipe(concat('SignalUI.css'))
+    .pipe(concat('lo-main.css'))
     .pipe(concat.header(fs.readFileSync('./node_modules/normalize.css/normalize.css')))
     .pipe(gulp.dest('./build'))
     .pipe(gulp.dest('./build/docs'));
@@ -86,14 +86,14 @@ gulp.task('docs', function() {
   gulp.src('./assets/**/*')
     .pipe(gulp.dest('./build/docs/assets'));
 
-  // Component Library 
-  gulp.src('./node_modules/signal-ui/dist/library/signal-ui.min.js')
+  // Component Library
+  gulp.src('./node_modules/chopped-sui/dist/library/chopped-sui.min.js')
     .pipe(gulp.dest('./build/docs'));
 
-  gulp.src('./node_modules/signal-ui/dist/components/css/components.min.css')
+  gulp.src('./node_modules/chopped-sui/dist/components/css/components.min.css')
     .pipe(gulp.dest('./build/docs'));
 
-  gulp.src('./node_modules/signal-ui/dist/components/js/components.min.js')
+  gulp.src('./node_modules/chopped-sui/dist/components/js/components.min.js')
     .pipe(gulp.dest('./build/docs'));
 });
 
@@ -122,5 +122,5 @@ gulp.task('deploy', function() {
 
 gulp.task('serve', function() {
   shell('node_modules/.bin/http-server build/docs');
-  console.log('Serving Signal UI Documentation at http://localhost:8080/');
+  console.log('Serving Lo-Main Documentation at http://localhost:8080/');
 });

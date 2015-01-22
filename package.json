@@ -1,16 +1,16 @@
 {
-  "name": "Signal-UI",
+  "name": "lo-main",
   "version": "0.0.1",
-  "description": "Signal UI components and living style guide",
+  "description": "Low Level Style Sheet by Signal",
   "author": "Signal",
   "homepage": "http://signal.co",
   "license": "Apache License v2",
   "main": "helper/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:BrightTag/Signal-UI.git"
+    "url": "git@github.com:BrightTag/lo-main.git"
   },
-  "devDependencies": {
+  "dependencies": {
     "gulp": "^3.8.10",
     "gulp-browserify": "^0.5.0",
     "gulp-concat-util": "^0.5.1",
@@ -22,7 +22,7 @@
     "http-server": "^0.7.4",
     "js-yaml": "^3.2.3",
     "normalize.css": "^3.0.2",
-    "signal-ui": "git://github.com/BrightTag/signal-ui-component-library.git",
+    "chopped-sui": "git://github.com/BrightTag/chopped-sui.git",
     "underscore": "^1.7.0",
     "yargs": "^1.3.3",
     "gulp-data": "^1.0.2",
@@ -30,7 +30,7 @@
     "markdown-js": "0.0.3"
   },
   "scripts": {
-    "postinstall": "git clone https://github.com/BrightTag/Signal-UI.git build/docs -b gh-pages; node node_modules/.bin/gulp default;"
+    "postinstall": "git clone https://github.com/BrightTag/lo-main.git build/docs -b gh-pages; node node_modules/.bin/gulp default;"
   },
   "engines": {
     "node": "0.10.x"
