@@ -1,5 +1,5 @@
-Signal UI
-=========
+Lo Main - Low Level Styles by Signal
+====================================
 
 See http://brighttag.github.io/Signal-UI/
 
