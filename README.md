@@ -1,7 +1,7 @@
 Lo-Main - Low Level Style Sheet by Signal
 =========================================
 
-See http://brighttag.github.io/Signal-UI/
+See http://brighttag.github.io/lo-main/
 
 This repository should:
 
