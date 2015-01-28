@@ -9,6 +9,7 @@ button {
 	padding: .52941rem 4rem .41176rem;
 	text-align: center;
 	text-transform: uppercase;
+  border-radius: $lo-button-radius;
 
 	&.primary {
 		background: $signal-blue;
@@ -36,7 +37,7 @@ button {
     &:active {
       background: darken($light-grey, 5%);
     }
-	}	
+	}
 
 	&.caution {
 		background: $lemon-curd;
@@ -50,7 +51,7 @@ button {
     &:active {
       background: darken($lemon-curd, 5%);
     }
-	}	
+	}
 
 	&.warning {
 		background: $signal-red;
