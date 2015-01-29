@@ -9,7 +9,7 @@ h2 {
   font-size: 2.45em;
   font-weight: 300;
 }
-      
+
 h3 {
   font-size: 2.2em;
   font-weight: 300;
@@ -34,6 +34,7 @@ h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: #000;
   margin: 0.8em 0 0.4em;
 
   &:first-child {
