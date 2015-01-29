@@ -37,7 +37,7 @@ gulp.task('docs', function() {
 
   (function getModules(base) {
     var moduleName = './styles/' + (base ? base + '/' : '') + 'docs.js';
-    delete require.cache[path.resolve(moduleName)] // Invalidate cache
+    delete require.cache[path.resolve(moduleName)]; // Invalidate cache
     var doc = require(moduleName);
 
     if(base) {
