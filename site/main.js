@@ -49,7 +49,7 @@ $(function() {
             top   = $this.position().top;
 
         if(scrollTop > top) {
-          hash = $(this).attr('id');
+          hash = $this.attr('id');
         }
       });
 
