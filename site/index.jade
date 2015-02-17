@@ -21,12 +21,3 @@ block content
 
             if !example.noMarkup
               pre #{example.html}
-
-  h2(id='dropdown') Dropdown
-  div.drop-down.drop-down--unenhanced(style='margin-bottom: 140px;')
-    select.drop-down__select
-      option(value="1") Menu Option 1
-      option(value="2") Menu Option 2
-      option(value="3") Menu Option 3
-  script#drop-down-6.
-    SignalUI.initializeComponent({ scriptId: 'drop-down-6', componentType: 'drop-down' });

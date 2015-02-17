@@ -22,7 +22,7 @@
     "http-server": "0.7.x",
     "js-yaml": "3.2.x",
     "normalize.css": "3.0.x",
-    "chopped-sui": "git://github.com/BrightTag/chopped-sui.git",
+    "chop-suey": "git://github.com/BrightTag/chop-suey.git",
     "underscore": "1.7.x",
     "yargs": "1.3.x",
     "gulp-data": "1.0.x",

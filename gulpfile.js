@@ -87,13 +87,13 @@ gulp.task('docs', function() {
     .pipe(gulp.dest('./build/docs/assets'));
 
   // Component Library
-  gulp.src('./node_modules/chopped-sui/dist/library/chopped-sui.min.js')
+  gulp.src('./node_modules/chop-suey/dist/js/chop-suey.min.js')
     .pipe(gulp.dest('./build/docs'));
 
-  gulp.src('./node_modules/chopped-sui/dist/components/css/components.min.css')
+  gulp.src('./node_modules/chop-suey/dist/components/css/components.min.css')
     .pipe(gulp.dest('./build/docs'));
 
-  gulp.src('./node_modules/chopped-sui/dist/components/js/components.min.js')
+  gulp.src('./node_modules/chop-suey/dist/components/js/components.min.js')
     .pipe(gulp.dest('./build/docs'));
 });
 
