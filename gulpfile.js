@@ -26,7 +26,7 @@ gulp.task('css', function() {
       bundleExec: true,
       require: ['bourbon', 'susy']
     }))
-    .pipe(concat('lo-main.css'))
+    .pipe(concat('LoMein.css'))
     .pipe(concat.header(fs.readFileSync('./node_modules/normalize.css/normalize.css')))
     .pipe(gulp.dest('./build'))
     .pipe(gulp.dest('./build/docs'));
@@ -122,5 +122,5 @@ gulp.task('deploy', function() {
 
 gulp.task('serve', function() {
   shell('node_modules/.bin/http-server build/docs');
-  console.log('Serving Lo-Main Documentation at http://localhost:8080/');
+  console.log('Serving LoMein Documentation at http://localhost:8080/');
 });

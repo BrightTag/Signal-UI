@@ -1,5 +1,5 @@
 {
-  "name": "lo-main",
+  "name": "LoMein",
   "version": "0.0.1",
   "description": "Low Level Style Sheet by Signal",
   "author": "Signal",
@@ -8,7 +8,7 @@
   "main": "helper/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:BrightTag/lo-main.git"
+    "url": "git@github.com:BrightTag/LoMein.git"
   },
   "dependencies": {
     "gulp": "3.8.x",
@@ -30,7 +30,7 @@
     "markdown-js": "0.0.3"
   },
   "scripts": {
-    "postinstall": "git clone https://github.com/BrightTag/lo-main.git build/docs -b gh-pages; node node_modules/.bin/gulp default;"
+    "postinstall": "git clone https://github.com/BrightTag/LoMein.git build/docs -b gh-pages; node node_modules/.bin/gulp default;"
   },
   "engines": {
     "node": "0.10.x"
