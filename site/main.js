@@ -34,7 +34,7 @@ $(function() {
   onResize();
 
   // Active Link Selection
-  var path        = window.location.pathname.replace(/^\/Signal-UI/, ''),
+  var path        = window.location.pathname.replace(/^\/LoMein/, ''),
       $headings   = $('h2[id]'),
       $asideLinks = $('aside a');
 
