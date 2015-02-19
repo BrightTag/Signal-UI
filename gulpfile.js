@@ -106,18 +106,15 @@ gulp.task('watch', function() {
 });
 
 gulp.task('deploy', function() {
-  var msg = argv.m;
+  gulp.start('default');
 
-  if(msg) {
-    gulp.start('default');
+  shell('git log -1 --pretty=%B', function(error, msg) {
+    console.log(msg);
     shell('cd build/docs; git add -A; git commit -a -m "'+msg+'"; git push;', function(error, stdout, stderr) {
       util.log(stdout);
       util.log(stderr);
     });
-  }
-  else {
-    throw 'Please provide a commit message using the -m flag';
-  }
+  });
 });
 
 gulp.task('serve', function() {
