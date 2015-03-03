@@ -11,23 +11,25 @@
     "url": "git@github.com:BrightTag/LoMein.git"
   },
   "dependencies": {
+    "chop-suey": "git://github.com/BrightTag/chop-suey.git",
     "gulp": "3.8.x",
     "gulp-browserify": "0.5.x",
     "gulp-concat-util": "0.5.x",
+    "gulp-connect": "^2.2.0",
+    "gulp-data": "1.0.x",
     "gulp-jade": "0.9.0",
     "gulp-ruby-sass": "0.7.x",
     "gulp-sass": "1.1.x",
+    "gulp-serve": "^0.3.1",
     "gulp-util": "3.0.x",
     "gulp-watch": "1.1.x",
     "http-server": "0.7.x",
-    "js-yaml": "3.2.x",
-    "normalize.css": "3.0.x",
-    "chop-suey": "git://github.com/BrightTag/chop-suey.git",
-    "underscore": "1.7.x",
-    "yargs": "1.3.x",
-    "gulp-data": "1.0.x",
     "jade": "1.7.x",
-    "markdown-js": "0.0.3"
+    "js-yaml": "3.2.x",
+    "markdown-js": "0.0.3",
+    "normalize.css": "3.0.x",
+    "underscore": "1.7.x",
+    "yargs": "1.3.x"
   },
   "scripts": {
     "postinstall": "git clone https://github.com/BrightTag/LoMein.git build/docs -b gh-pages; node node_modules/.bin/gulp default;"
@@ -37,5 +39,9 @@
   },
   "publishConfig": {
     "registry": "http://npm.thebrighttag.com/"
+  },
+  "devDependencies": {
+    "del": "^1.1.1",
+    "run-sequence": "^1.0.2"
   }
 }
