@@ -1,12 +1,12 @@
 module.exports = {
   name: 'Basic Elements',
   components: [
-    'paragraph',
-    'heading',
-    'button',
-    'input',
-    'list',
-    'loader',
-    'colorswatches'
+    'components/paragraph',
+    'components/heading',
+    'components/button',
+    'components/input',
+    'components/list',
+    'components/loader',
+    'components/colorswatches'
   ]
 };

@@ -1,7 +1,7 @@
 var gulp        = require('gulp'),
     fs          = require('fs'),
     path        = require('path'),
-    sass        = require('gulp-sass'),
+    sass        = require('gulp-ruby-sass'),
     util        = require('gulp-util'),
     watch       = require('gulp-watch'),
     concat      = require('gulp-concat-util'),
@@ -15,7 +15,11 @@ var gulp        = require('gulp'),
     data        = require('gulp-data');
 
 var paths = {
-  scss: './styles/**/index.scss'
+  scss: [
+    // './styles/config/*.scss',
+    './styles/components/**/index.scss'
+  ],
+  normalize: './node_modules/normalize.css/normalize.css'
 };
 
 gulp.task('css', function() {
@@ -27,12 +31,12 @@ gulp.task('css', function() {
       require: ['bourbon', 'susy']
     }))
     .pipe(concat('LoMein.css'))
-    .pipe(concat.header(fs.readFileSync('./node_modules/normalize.css/normalize.css')))
+    .pipe(concat.header(fs.readFileSync(paths.normalize)))
     .pipe(gulp.dest('./build'))
     .pipe(gulp.dest('./build/docs'));
 });
 
-gulp.task('docs', function() {
+gulp.task('docs', ['css'], function() {
   var components = [];
 
   (function getModules(base) {

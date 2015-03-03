@@ -1,4 +1,4 @@
-@import "../settings.scss";
+@import "../../lo-mein";
 
 input,
 textarea {
@@ -16,7 +16,7 @@ textarea {
   &.alert {
     border-color: $signal-red;
   }
-  
+
   &:disabled {
     background-color: #efefef;
   }
