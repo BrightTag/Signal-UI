@@ -45,7 +45,7 @@ gulp.task('docs', function() {
       util.log(err.stack);
     })
     .on('error', util.beep)
-    .pipe(gulp.dest('./build/docs'));
+    .pipe(gulp.dest('./dist/docs'));
 
   gulp.src('./site/main.scss')
     .pipe(rubySass({
@@ -54,23 +54,23 @@ gulp.task('docs', function() {
       bundleExec: true,
       require: ['bourbon', 'susy']
     }))
-    .pipe(gulp.dest('./build/docs'));
+    .pipe(gulp.dest('./dist/docs'));
 
   gulp.src('./site/**/[^_]*.js')
     .pipe(browserify())
-    .pipe(gulp.dest('./build/docs'));
+    .pipe(gulp.dest('./dist/docs'));
 
   // Assets
   gulp.src('./assets/**/*')
-    .pipe(gulp.dest('./build/docs/assets'));
+    .pipe(gulp.dest('./dist/docs/assets'));
 
   // Component Library
   gulp.src('./node_modules/chop-suey/dist/js/chop-suey.min.js')
-    .pipe(gulp.dest('./build/docs'));
+    .pipe(gulp.dest('./dist/docs'));
 
   gulp.src('./node_modules/chop-suey/dist/components/css/components.min.css')
-    .pipe(gulp.dest('./build/docs'));
+    .pipe(gulp.dest('./dist/docs'));
 
   gulp.src('./node_modules/chop-suey/dist/components/js/components.min.js')
-    .pipe(gulp.dest('./build/docs'));
+    .pipe(gulp.dest('./dist/docs'));
 });

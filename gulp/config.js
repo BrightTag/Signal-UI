@@ -8,8 +8,8 @@ var config = {
 
     scss: {
       src: './styles/lo-mein.scss',
-      dest: './build',
-      out: 'LoMein.css'
+      dest: './dist',
+      out: 'lo-mein.css'
     },
 
     rubySass: {
@@ -25,7 +25,7 @@ var config = {
   },
 
   docs: {
-    root: './build/docs',
+    root: './dist/docs',
     serverport: 8080
   },
 

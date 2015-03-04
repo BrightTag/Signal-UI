@@ -1,6 +1,6 @@
 # Compiled source #
 ###################
-build/
+dist/
 test/build/
 platforms/PhoneGap/www/js/
 platforms/PhoneGap/www/css/
