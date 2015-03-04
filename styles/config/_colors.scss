@@ -1,44 +1,23 @@
+$signal-red:        #ea1c2c;
+$dark-signal-red:   #b81623;
 
-$white: #fff;
-$black: #111;
+$signal-blue:       #00adef;
+$dark-signal-blue:  #00688f;
 
-// @todo
-// color names are too arbitrary and obtuse.
-// let's rename and sass-map colors based on a scale.
+$blue-lagoon:       #004d6b;
+$dark-blue-lagoon:  #00364a;
 
-// Example:
-// $blue: (
-//   "50": #E3F2FD,
-//   "100": #BBDEFB,
-//   "200": #90CAF9,
-//   "300": #64B5F6,
-//   "400": #42A5F5,
-//   "500": #2196F3,
-//   "600": #1E88E5,
-//   "700": #1976D2,
-//   "800": #1565C0,
-//   "900": #0D47A1,
-//   "A100": #82B1FF,
-//   "A200": #448AFF,
-//   "A400": #2979FF,
-//   "A700": #2962FF,
-// )
+$teal:              #00a19a;
+$dark-teal:         #004b48;
 
-$teal: #00a19a;
-$signal-blue: #00adef;
-$lemon-curd: #ffc556;
-$dark-signal-blue: #00688f;
-$dark-teal: #004b48;
-$dark-lemon-curd: #edb750;
-$signal-red: #ea1c2c;
-$dark-signal-red: #b81623;
-$green: #00a10b;
-$dark-green: #006107;
-$blue-lagoon: #004d6b;
-$dark-blue-lagoon: #00364a;
-$grey: #cccccc;
-$dark-grey: #333333;
-$white: #ffffff;
-$light-grey: #dfdfdf;
+$lemon-curd:        #ffc556;
+$dark-lemon-curd:   #edb750;
 
-$lo-border-radius: 3px;
+$green:             #00a10b;
+$dark-green:        #006107;
+
+$grey:              #cccccc;
+$light-grey:        #dfdfdf;
+$dark-grey:         #333333;
+
+$white:             #ffffff;

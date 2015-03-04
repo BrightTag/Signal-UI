@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+  font-family: $proxima-nova;
+  height: 100%;
+  color: #3D3D3D;
+}
+
+// http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $white;
+  height: 100%;
+  margin: 0;
+}
+
+a {
+
+}

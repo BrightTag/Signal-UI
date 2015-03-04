@@ -1,0 +1,10 @@
+// @WIP
+$lo-base-font-size: 16px !default;
+$lo-base-line-height: 24px !default;
+$lo-base-text-color: #333 !default;
+
+$lo-base-spacing-unit: $lo-base-line-height;
+$lo-base-spacing-unit--small: round($lo-base-spacing-unit / 2);
+$lo-base-spacing-unit--large: round($lo-base-spacing-unit * 2);
+
+$lo-border-radius: 3px;

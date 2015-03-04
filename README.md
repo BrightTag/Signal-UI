@@ -4,7 +4,7 @@ LoMein is a base style sheet that styles html elements to conform with Signal's 
 
 Usage
 -----
-LoMein can be installed by simply including the [latest CSS file](https://github.com/BrightTag/LoMein/releases/latest/) or by including the entire repository and using the SCSS files found in `/styles`.  Currently `/styles/_settings.scss` includes all of the variablized SCSS but we plan to add more in the near future.
+LoMein can be installed by simply including the [latest CSS file](https://github.com/BrightTag/LoMein/releases/latest/) or by including the entire repository and using the SCSS files found in `/styles`.  Currently `/styles/config/**` includes all of the variablized SCSS but we plan to add more in the near future.
 
 Development
 -----------
