@@ -1,7 +1,11 @@
 @import
   "config/colors",
   "config/font-stacks",
-  "config/dimensions";
+  "config/dimensions",
+  "config/layout";
+
+@import
+  "mixins/breakpoint";
 
 @import
   "utilities/clearfix";
