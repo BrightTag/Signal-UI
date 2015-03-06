@@ -5,11 +5,10 @@
   "config/layout";
 
 @import
+  "mixins/utility",
   "mixins/breakpoint";
 
 @import
-  "utilities/clearfix";
-
-@import
+  "base/utility",
   "base/elements",
   "base/type";

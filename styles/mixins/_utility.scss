@@ -1,0 +1,13 @@
+/**
+ * Clearfix
+ * http://www.cssmojo.com/latest_new_clearfix_so_far/
+ *
+ * Usage: @include clearfix;
+ */
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
