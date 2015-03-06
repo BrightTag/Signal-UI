@@ -5,10 +5,10 @@
   "config/layout";
 
 @import
-  "mixins/utility",
-  "mixins/breakpoint";
+  "lib/mixins/utility",
+  "lib/mixins/breakpoint";
 
 @import
-  "base/utility",
-  "base/elements",
-  "base/type";
+  "lib/base/utility",
+  "lib/base/elements",
+  "lib/base/type";
