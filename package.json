@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "Low Level Style Sheet by Signal",
   "author": "Signal",
-  "homepage": "http://signal.co",
+  "homepage": "http://signal.github.io/lo-mein",
   "license": "Apache License v2",
   "main": "helper/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:BrightTag/LoMein.git"
+    "url": "https://github.com/signal/lo-mein"
   },
   "dependencies": {
     "gulp": "3.8.x",
