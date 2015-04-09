@@ -1,5 +1,8 @@
 LoMein - Signal Style Guide
 ===========================
+
+[See Demo Here](http://signal.github.io/lo-mein/)
+
 LoMein is a base style sheet that styles html elements to conform with Signal's brand. LoMein is designed to be included as a CSS file or as a SASS library that exposes stylistic elements to be used in other stylesheets.
 
 Usage
