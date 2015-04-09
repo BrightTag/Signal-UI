@@ -8,7 +8,7 @@ LoMein can be installed by simply including the [latest CSS file](https://github
 
 Development
 -----------
-Make sure you have npm and gulp installed on your machine.
+Make sure you have [npm](https://www.npmjs.com/), [gulp](http://gulpjs.com/), [ruby](https://www.ruby-lang.org/) and [bundler](http://bundler.io/) installed on your machine.
 
 **To install:** `npm install`
 
