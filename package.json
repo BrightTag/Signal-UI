@@ -11,7 +11,6 @@
     "url": "git@github.com:BrightTag/LoMein.git"
   },
   "dependencies": {
-    "chop-suey": "git://github.com/BrightTag/chop-suey.git",
     "gulp": "3.8.x",
     "gulp-browserify": "0.5.x",
     "gulp-concat-util": "0.5.x",
