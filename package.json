@@ -5,7 +5,7 @@
   "author": "Signal",
   "homepage": "http://signal.github.io/lo-mein",
   "license": "Apache License v2",
-  "main": "helper/index.js",
+  "main": "styles/_config.scss",
   "repository": {
     "type": "git",
     "url": "https://github.com/signal/lo-mein"
