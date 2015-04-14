@@ -27,7 +27,7 @@ npm install --save git://github.com/signal/lo-mein.git
 Include `lo-mein.scss` at the top of your SCSS file:
 
 ```scss
-@import 'node_modules/lo-mein';
+@import 'node_modules/lo-mein/styles/_config.scss';
 ```
 
 Now all of the lo-mein styles will be available as variables in your SCSS file. These variables are defined in the [styles/config](styles/config) directory and includes several different files which can be used as a reference:
