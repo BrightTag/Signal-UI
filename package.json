@@ -31,7 +31,7 @@
     "yargs": "1.3.x"
   },
   "scripts": {
-    "postinstall": "git clone https://github.com/signal/lo-mein.git dist/docs -b gh-pages; bundle install; gulp;"
+    "postinstall": "mkdir dist; git clone https://github.com/signal/lo-mein.git dist/docs -b gh-pages; bundle install; gulp;"
   },
   "engines": {
     "node": "0.10.x"
