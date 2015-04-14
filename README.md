@@ -24,7 +24,7 @@ Include this entire repository in your project using your favorite dependency ma
 npm install --save git://github.com/signal/lo-mein.git
 ```
 
-Include `lo-mein.scss` at the top of your SCSS file:
+Include LoMein at the top of your SCSS file:
 
 ```scss
 @import 'node_modules/lo-mein/styles/_config.scss';
