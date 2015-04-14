@@ -60,6 +60,9 @@ gulp.task('docs', function() {
     .pipe(browserify())
     .pipe(gulp.dest('./dist/docs'));
 
+  gulp.src('./site/**/*.png')
+    .pipe(gulp.dest('./dist/docs'));
+
   // Assets
   gulp.src('./assets/**/*')
     .pipe(gulp.dest('./dist/docs/assets'));
