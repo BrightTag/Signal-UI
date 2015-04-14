@@ -30,12 +30,12 @@ Include `lo-mein.scss` at the top of your SCSS file:
 @import 'node_modules/lo-mein';
 ```
 
-Now all of the lo-mein styles will be available as variables in your SCSS file. These variables are defined in the `styles/config` directory and includes several different files which can be used as a reference:
+Now all of the lo-mein styles will be available as variables in your SCSS file. These variables are defined in the [styles/config](styles/config) directory and includes several different files which can be used as a reference:
 
-- `_colors.scss`: The colors used with Signal's brand. (e.g. `$signal-red`)
-- `_dimensions.scss`: Dimensions of text and elements. (e.g. `$lo-border-radius`)
-- `_font-stacks.scss`: Font families used in signal materials. (e.g. `$proxima-nova`)
-- `_layout.scss`: Includes grid layout variables (`$grid`) and responsive breakpoints (`$breakpoints`).
+- [_colors.scss](styles/config/_colors.scss): The colors used with Signal's brand. (e.g. `$signal-red`)
+- [_dimensions.scss](styles/config/_dimensions.scss): Dimensions of text and elements. (e.g. `$lo-border-radius`)
+- [_font-stacks.scss](styles/config/_font-stacks.scss): Font families used in signal materials. (e.g. `$proxima-nova`)
+- [_layout.scss](styles/config/_layout.scss): Includes grid layout variables (`$grid`) and responsive breakpoints (`$breakpoints`).
 
 Development
 -----------
