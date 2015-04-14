@@ -1,4 +1,5 @@
 header {
+  position: relative;
   background: #555555; }
   header h1 {
     line-height: 70px;
@@ -7,6 +8,19 @@ header {
     header h1 a {
       color: #FFF;
       text-decoration: none; }
+  header #forkme-banner {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    z-index: 10;
+    padding: 10px 50px 10px 10px;
+    color: #fff;
+    background: url("./images/octocat.png") transparent no-repeat 95% 50%;
+    background-size: 32px 32px;
+    text-decoration: none; }
+    header #forkme-banner:hover {
+      text-decoration: underline; }
 
 aside {
   position: fixed;
