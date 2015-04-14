@@ -6,7 +6,7 @@ LoMein is a basic style sheet that styles html elements to conform with Signal's
 Usage
 -----
 
-LoMein is designed to be included as a ready-to-use CSS style sheet or as a SASS library (styles/_config.scss) that allows you to use stylistic variables in your own SASS files.
+LoMein is designed to be included as a ready-to-use CSS style sheet or as a SASS library that allows you to use stylistic variables in your own SASS files.
 
 ### Include CSS Style Sheet
 
