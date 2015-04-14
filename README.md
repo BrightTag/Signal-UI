@@ -1,7 +1,7 @@
 LoMein - Signal Style Guide
 ===========================
 
-LoMein is a basic style sheet that styles html elements to conform with Signal's brand.  [See Demo Here](http://signal.github.io/lo-mein/)
+LoMein is a base style sheet for Signal's brand.  [See Demo Here](http://signal.github.io/lo-mein/)
 
 Usage
 -----
