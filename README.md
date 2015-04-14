@@ -18,7 +18,7 @@ LoMein can be installed by simply adding the [latest CSS file](https://github.co
 
 ### Use as a SASS Library
 
-Include this entire repository in your project using your favorite dependency management tool such as npm:
+ake sure you have [npm](https://www.npmjs.com/), [gulp](http://gulpjs.com/), [ruby](https://www.ruby-lang.org/) and [bundler](http://bundler.io/) installed on your machine.  Next install the library using npm:
 
 ```bash
 npm install --save git://github.com/signal/lo-mein.git
