@@ -35,7 +35,7 @@ $(function() {
   onResize();
 
   // Active Link Selection
-  var path        = window.location.pathname.replace(/^\/LoMein/, ''),
+  var path        = window.location.pathname.replace(/^\/lo-mein/, ''),
       $headings   = $('h2[id]'),
       $asideLinks = $('aside a');
 
